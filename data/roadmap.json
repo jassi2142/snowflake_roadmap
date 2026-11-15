@@ -1597,6 +1597,18 @@
               ]
             },
             {
+              "id": "snowpro-cheat-sheet",
+              "title": "SnowPro Quick Syntax & Cheat Sheet",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin",
+                "architect"
+              ]
+            },
+            {
               "id": "snowpro-advanced",
               "title": "SnowPro Advanced",
               "type": "optional",

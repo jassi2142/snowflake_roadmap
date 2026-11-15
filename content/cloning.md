@@ -19,13 +19,16 @@ Add `AT` or `BEFORE` to clone an object as it existed in the past, within its Ti
 
 ### What carries over
 
-- **Grants:** cloning a database or schema copies the grants on the child objects (tables, views, and so on), but not the grants on the database or schema itself. Cloning a single table does not copy its grants unless you add `COPY GRANTS`.
+- **Grants:** cloning a database or schema copies the grants on child objects (tables, views, etc.), but not grants on the database or schema container itself. Cloning a single table does not copy its grants unless you append `COPY GRANTS` (which copies explicit privileges, but does not inherit future grants).
+- **Sequences:** if a sequence is defined in the *same* database or schema being cloned, the sequence is cloned and the cloned table points to the cloned sequence; if defined in an external database/schema, or if only the table itself is cloned, the cloned table references the original source sequence.
+- **Tasks and alerts:** clones of tasks and alerts start **suspended** by default to prevent unwanted jobs in test environments; resume them explicitly.
+- **Streams:** when a schema or database containing tables and streams is cloned, unconsumed records in the cloned streams are inaccessible.
+- **Foreign keys:** if parent and child tables reside in the same schema being cloned, the cloned child table's foreign key references the cloned parent table; otherwise, it references the original parent table.
 - **Policies and tags:** a cloned table keeps its masking and row access policies and tag assignments. If the policy lives in the same schema or database being cloned, the clone points to the cloned policy.
-- **Tasks and alerts:** clones of tasks and alerts start **suspended**; resume them explicitly.
 - **Clustering:** automatic clustering is suspended on a cloned table until you run `ALTER TABLE ... RESUME RECLUSTER`.
 - **Pipes:** pipes that reference internal stages are not cloned; cloned auto-ingest pipes start in a stopped state.
 - **Stages:** files in table stages are not copied, and internal named stages are cloned only with `INCLUDE INTERNAL STAGES`.
-- **Not cloned:** external tables and internal stages are not cloned when using Time Travel.
+- **Not cloned:** external tables and internal stages are not cloned when cloning schemas or databases.
 
 ## Example
 

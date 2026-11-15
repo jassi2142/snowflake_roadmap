@@ -299,7 +299,7 @@
   <div class="tracks-bar" role="group" aria-label="Learning Tracks">
     <span class="tracks-label">Track:</span>
     <div class="track-buttons" id="track-buttons">
-      <button type="button" data-tr="" class="active">All Topics (128)</button>
+      <button type="button" data-tr="" class="active">All Topics</button>
     </div>
   </div>
 
@@ -855,6 +855,8 @@
     if (trBox && RM.tracks) {
       const trCounts = {};
       allTopics.forEach(({ t }) => { (t.tracks || []).forEach(tr => { trCounts[tr] = (trCounts[tr] || 0) + 1; }); });
+      const allTrBtn = trBox.querySelector('button[data-tr=""]');
+      if (allTrBtn) allTrBtn.textContent = `All Topics (${allTopics.length})`;
       RM.tracks.forEach(tr => {
         const b = document.createElement('button');
         b.type = 'button';

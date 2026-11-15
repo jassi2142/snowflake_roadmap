@@ -9,8 +9,8 @@ platform architecture, administration and data engineering. All roadmap content 
 | Item | Count |
 | --- | --- |
 | Roadmap sections | 17 |
-| Topics (Beginner / Intermediate / Advanced) | 128 |
-| Knowledge-check questions | 384 (3 per topic) |
+| Topics (Beginner / Intermediate / Advanced) | 129 |
+| Knowledge-check questions | 387 (3 per topic) |
 | Snippet library recipes | 45 |
 | Community articles indexed (titles and links only) | 366 |
 | Verified links | 289, all working |

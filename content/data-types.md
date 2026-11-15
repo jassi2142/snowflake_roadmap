@@ -8,18 +8,21 @@ The main categories are:
 
 - **Numeric**
   - `NUMBER(p, s)` stores exact fixed-point values. Precision can be up to 38 digits. `INT`, `INTEGER`, `BIGINT`, and `DECIMAL` are synonyms for NUMBER (integer synonyms have a scale of 0).
+  - **Storage vs. Precision:** Declaring a large precision (e.g. `NUMBER(38,0)`) does **not** consume extra storage because micro-partitions dynamically bit-pack to the actual minimum and maximum values stored. However, scale ($s$, digits following the decimal point) **does** impact storage and compression.
   - `FLOAT` (also `DOUBLE`, `REAL`) stores approximate floating-point values, including special values such as `'NaN'`.
 - **String and binary**
-  - `VARCHAR` (also `STRING`, `TEXT`) stores Unicode text in UTF-8. When no length is given, the default maximum is 16 MB, and larger sizes can be declared explicitly. A short string uses only the space it needs, so declaring a large length does not waste storage. `CHAR` is a VARCHAR with a default length of 1.
+  - `VARCHAR` (also `STRING`, `TEXT`) stores Unicode text in UTF-8. When no length is given, the default maximum is 16 MB. A short string uses only the space it needs, so declaring `VARCHAR` without length does not waste storage. `CHAR` is a VARCHAR with a default length of 1.
+  - **Delimiters:** String literals can be enclosed in single quotes (`'text'`) or double dollar signs (`$$text with 'quote'$$`), useful for multi-line strings without escaping single quotes.
   - `BINARY` stores raw bytes. The default maximum is 8 MB.
 - **Logical:** `BOOLEAN` holds TRUE, FALSE, or NULL.
-- **Date and time**
+- **Date, time, and intervals**
   - `DATE` stores only a calendar date.
-  - `TIME` stores a time of day.
+  - `TIME` stores a time of day with fractional precision from 0 to 9 (default is 9 nanoseconds).
   - `TIMESTAMP_NTZ` stores a timestamp without a time zone ("wall clock").
   - `TIMESTAMP_LTZ` stores a UTC instant and shows it in the session time zone.
   - `TIMESTAMP_TZ` stores a timestamp with its own time zone offset.
-  - Plain `TIMESTAMP` maps to one of the three variants above, according to the `TIMESTAMP_TYPE_MAPPING` parameter. Fractional-second precision ranges from 0 to 9, and the default is 9.
+  - Plain `TIMESTAMP` maps to one of the three variants above, according to the `TIMESTAMP_TYPE_MAPPING` parameter.
+  - **Interval Arithmetic Quirk:** The order of interval addition matters across leap years: `SELECT TO_DATE('2019-02-28') + INTERVAL '1 day, 1 year'` evaluates to `2020-03-01`, whereas `+ INTERVAL '1 year, 1 day'` evaluates to `2020-02-29`.
 - **Semi-structured**
   - `VARIANT` holds any value, including JSON-like nested data.
   - `OBJECT` holds key-value pairs.

@@ -16,7 +16,13 @@ External stages are named objects created with `CREATE STAGE ... URL = '...'` th
 
 You move local files into an internal stage with the `PUT` command (run from a client such as SnowSQL or Snowflake CLI, not from a Snowsight worksheet), and download files with `GET`. For external stages, you upload files with your cloud provider's own tools. `LIST @stage` shows the files in any stage, and `REMOVE @stage/path` deletes them.
 
-A stage can also have a **directory table**, which keeps a catalog of the files in the stage that you can query with SQL. Directory tables are commonly used with unstructured data.
+A stage can also have a **directory table**, which keeps a catalog of the files in the stage that you can query with SQL (e.g. `SELECT * FROM DIRECTORY(@my_stage)`). For external stages, directory metadata can refresh automatically via cloud notification events (`AUTO_REFRESH = TRUE`) or manually using `ALTER STAGE <name> REFRESH;`.
+
+### Staged File URLs
+Snowflake generates three types of URLs to access or download staged files:
+- **Scoped URL** (`BUILD_SCOPED_FILE_URL`): Temporary, encoded URL valid for 24 hours. Lets authorized applications read a file without needing permissions on the underlying stage.
+- **Stage File URL** (`BUILD_STAGE_FILE_URL`): Permanent Snowflake-hosted URL. Never expires, but requires stage read privileges to access.
+- **Pre-signed URL** (`GET_PRESIGNED_URL`): HTTPS URL with configurable expiration (seconds) designed for direct browser downloads.
 
 ## Example
 
