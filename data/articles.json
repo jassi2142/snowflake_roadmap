@@ -1,0 +1,3694 @@
+{
+  "source": {
+    "name": "Cloudyard",
+    "author": "Sachin Mittal",
+    "url": "https://cloudyard.in/author/sachin2021/"
+  },
+  "articles": [
+    {
+      "title": "Claude Meets Snowflake DMF: AI Takes Action!",
+      "url": "https://cloudyard.in/2026/11/claude-meets-snowflake-dmf-ai-takes-action/",
+      "date": "November 13, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "data-metric-functions",
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "Stop Writing Data Quality Scripts. Start Writing Metadata",
+      "url": "https://cloudyard.in/2026/11/stop-writing-data-quality-scripts-start-writing-metadata/",
+      "date": "November 9, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Horizon REST Catalog: Reading Snowflake-Managed Iceberg Tables from PyIceberg",
+      "url": "https://cloudyard.in/2026/10/horizon-rest-catalog-reading-snowflake-managed-iceberg-tables-from-pyiceberg/",
+      "date": "October 12, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "iceberg-tables",
+        "catalog-integrations"
+      ]
+    },
+    {
+      "title": "When a Column Changes, What Breaks. Snowflake DMF, Lineage & Cortex AI",
+      "url": "https://cloudyard.in/2026/09/when-a-column-changes-what-breaks-snowflake-dmf-lineage-cortex-ai/",
+      "date": "September 13, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "data-metric-functions",
+        "access-history",
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "Where Your Policy Lives: Building a Cortex Agent with Skills",
+      "url": "https://cloudyard.in/2026/09/where-your-policy-lives-building-a-cortex-agent-with-skills/",
+      "date": "September 3, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-agents",
+        "cortex-ai-functions",
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Building a SF MCP Server with Agent, SQL, and Generic Tools",
+      "url": "https://cloudyard.in/2026/08/building-a-sf-mcp-server-with-agent-sql-and-generic-tools/",
+      "date": "August 31, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-agents"
+      ]
+    },
+    {
+      "title": "Snowflake + n8n: Building a Data Incident Automation POC",
+      "url": "https://cloudyard.in/2026/08/snowflake-n8n-building-a-data-incident-automation-poc/",
+      "date": "August 20, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Bringing Snowflake Cortex Code into JetBrains DataGrip with ACP",
+      "url": "https://cloudyard.in/2026/08/bringing-snowflake-cortex-code-into-jetbrains-datagrip-with-acp/",
+      "date": "August 13, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "S3 to Azure Blob Storage: Comparing AWS DataSync and Snowflake COPY FILES",
+      "url": "https://cloudyard.in/2026/08/s3-to-azure-blob-storage-comparing-aws-datasync-and-snowflake-copy-files/",
+      "date": "August 4, 2026",
+      "category": "Discussion Forum",
+      "topics": [
+        "snowpark",
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake CI/CD with Azure DevOps",
+      "url": "https://cloudyard.in/2026/07/snowflake-ci-cd-with-azure-devops/",
+      "date": "July 28, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "ci-cd"
+      ]
+    },
+    {
+      "title": "Six Policies, One Table: Layered Data Protection in Snowflake",
+      "url": "https://cloudyard.in/2026/07/six-policies-one-table-layered-data-protection-in-snowflake/",
+      "date": "July 24, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "Snowflake → Slack: real-time alerts in 15 minutes",
+      "url": "https://cloudyard.in/2026/07/snowflake-%e2%86%92-slack-real-time-alerts-in-15-minutes/",
+      "date": "July 18, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Snowflake Cortex Search Named Scoring Profiles: Ranking the Right Document First",
+      "url": "https://cloudyard.in/2026/07/snowflake-cortex-search-named-scoring-profiles-ranking-the-right-document-first/",
+      "date": "July 8, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-search",
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "Parse, Redact, Extract, Search, Ask: Conversational AI Agent",
+      "url": "https://cloudyard.in/2026/06/parse-redact-extract-search-ask-conversational-ai-agent/",
+      "date": "June 30, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-agents",
+        "cortex-ai-functions",
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Persona-Driven Partial Decryption in Snowflake",
+      "url": "https://cloudyard.in/2026/06/persona-driven-partial-decryption-in-snowflake/",
+      "date": "June 22, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Smart Insurance Claim Photo Triage System with Cortex AI",
+      "url": "https://cloudyard.in/2026/06/smart-insurance-claim-photo-triage-system-with-cortex-ai/",
+      "date": "June 11, 2026",
+      "category": "Snowpark",
+      "topics": [
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "Cortex AI + Custom .whl Files: An AI-Powered Contract Risk Analyzer",
+      "url": "https://cloudyard.in/2026/06/cortex-ai-custom-whl-files-an-ai-powered-contract-risk-analyzer/",
+      "date": "June 3, 2026",
+      "category": "Snowpark",
+      "topics": [
+        "cortex-ai-functions",
+        "snowpark",
+        "udfs"
+      ]
+    },
+    {
+      "title": "Custom Python Packages in Snowflake Notebooks Using .whl Files",
+      "url": "https://cloudyard.in/2026/05/custom-python-packages-in-snowflake-notebooks-using-whl-files/",
+      "date": "May 27, 2026",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "udfs",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "MCP Connects GitHub Copilot in VS Code to Snowflake Cortex Agents",
+      "url": "https://cloudyard.in/2026/05/mcp-connects-github-copilot-in-vs-code-to-snowflake-cortex-agents/",
+      "date": "May 18, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-agents",
+        "cortex-ai-functions",
+        "ci-cd"
+      ]
+    },
+    {
+      "title": "Real-Time Alerts from Snowflake to Microsoft Teams",
+      "url": "https://cloudyard.in/2026/05/real-time-alerts-from-snowflake-to-microsoft-teams/",
+      "date": "May 5, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Snowflake DML Error Logging + GenAI Remediation",
+      "url": "https://cloudyard.in/2026/04/snowflake-dml-error-logging-genai-remediation/",
+      "date": "April 22, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "copy-into",
+        "event-tables"
+      ]
+    },
+    {
+      "title": "From PDF Resumes to AI-Powered Hiring Decisions – End-to-End in Snowflake",
+      "url": "https://cloudyard.in/2026/04/from-pdf-resumes-to-ai-powered-hiring-decisions-end-to-end-in-snowflake-2/",
+      "date": "April 10, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "From PDF Resumes to AI-Powered Hiring Decisions – End-to-End in Snowflake",
+      "url": "https://cloudyard.in/2026/04/from-pdf-resumes-to-ai-powered-hiring-decisions-end-to-end-in-snowflake/",
+      "date": "April 6, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Cost Intelligence in Snowflake using Cortex Code Custom Skills",
+      "url": "https://cloudyard.in/2026/04/cost-intelligence-in-snowflake-using-cortex-code-custom-skills/",
+      "date": "April 1, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-agents",
+        "cortex-ai-functions",
+        "credit-usage",
+        "cost-attribution"
+      ]
+    },
+    {
+      "title": "Building a Cortex Agent App with Snowflake REST API",
+      "url": "https://cloudyard.in/2026/03/building-a-cortex-agent-app-with-snowflake-rest-api/",
+      "date": "March 27, 2026",
+      "category": "Snowpark",
+      "topics": [
+        "cortex-agents",
+        "cortex-ai-functions",
+        "external-access"
+      ]
+    },
+    {
+      "title": "Document AI to AI_PARSE_DOCUMENT",
+      "url": "https://cloudyard.in/2026/03/document-ai-to-ai_parse_document/",
+      "date": "March 23, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions"
+      ]
+    },
+    {
+      "title": "EXECUTE TASK … USING CONFIG",
+      "url": "https://cloudyard.in/2026/03/execute-task-using-config/",
+      "date": "March 16, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "AI_REDACT-Powered PII Redaction in Snowflake",
+      "url": "https://cloudyard.in/2026/03/ai_redact-powered-pii-redaction-in-snowflake/",
+      "date": "March 6, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Integrate Snowflake with Microsoft Fabric Using Iceberg Tables",
+      "url": "https://cloudyard.in/2026/02/integrate-snowflake-with-microsoft-fabric-using-iceberg-tables/",
+      "date": "February 25, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "iceberg-tables",
+        "catalog-integrations"
+      ]
+    },
+    {
+      "title": "Stop Re-Scoring History: Dynamic Tables + IMMUTABLE WHERE",
+      "url": "https://cloudyard.in/2026/02/stop-re-scoring-history-dynamic-tables-immutable-where/",
+      "date": "February 9, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "dynamic-tables"
+      ]
+    },
+    {
+      "title": "Delta Direct in Snowflake: Build an Iceberg Table on Delta Files",
+      "url": "https://cloudyard.in/2026/02/delta-direct-in-snowflake-build-an-iceberg-table-on-delta-files/",
+      "date": "February 5, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "iceberg-tables",
+        "catalog-integrations"
+      ]
+    },
+    {
+      "title": "GenAI in Snowflake: Audit Logs + Email Alerts for Snowflake Intelligence",
+      "url": "https://cloudyard.in/2026/02/genai-in-snowflake-audit-logs-email-alerts-for-snowflake-intelligence/",
+      "date": "February 1, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "alerts"
+      ]
+    },
+    {
+      "title": "Gen AI for Analytics: Cortex Analyst with Dynamic Masking",
+      "url": "https://cloudyard.in/2026/01/gen-ai-for-analytics-cortex-analyst-with-dynamic-masking/",
+      "date": "January 16, 2026",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cortex-analyst",
+        "cortex-ai-functions",
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Evaluating Query Acceleration Service Before You Enable",
+      "url": "https://cloudyard.in/2026/01/evaluating-query-acceleration-service-before-you-enable/",
+      "date": "January 6, 2026",
+      "category": "Snowflake Admin",
+      "topics": [
+        "qas"
+      ]
+    },
+    {
+      "title": "Freeze the Past:Using IMMUTABLE WHERE in Dynamic Tables",
+      "url": "https://cloudyard.in/2025/12/freeze-the-pastusing-immutable-where-in-dynamic-tables/",
+      "date": "December 31, 2025",
+      "category": "Snowflake Admin",
+      "topics": [
+        "dynamic-tables"
+      ]
+    },
+    {
+      "title": "Automating Snowflake External Tables Creation: A Better Way to Handle N+ Columns",
+      "url": "https://cloudyard.in/2025/12/automating-snowflake-external-tables-creation-a-better-way-to-handle-n-columns/",
+      "date": "December 22, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "Data Masking with Snowflake Tags and dbt Post-Hooks",
+      "url": "https://cloudyard.in/2025/12/data-masking-with-snowflake-tags-and-dbt-post-hooks/",
+      "date": "December 17, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging",
+        "dbt"
+      ]
+    },
+    {
+      "title": "Document AI, FLATTEN, and Dynamic Tables in Snowflake",
+      "url": "https://cloudyard.in/2025/12/document-ai-flatten-and-dynamic-tables-in-snowflake/",
+      "date": "December 8, 2025",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cortex-ai-functions",
+        "dynamic-tables",
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Building a Fully Automatic Incremental Pipeline with Snowflake Document AI",
+      "url": "https://cloudyard.in/2025/11/building-a-fully-automatic-incremental-pipeline-with-snowflake-document-ai/",
+      "date": "November 19, 2025",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cortex-ai-functions",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Business-Day Validation with Snowflake External Functions: Stop Weekend/Holiday SLA Misses",
+      "url": "https://cloudyard.in/2025/11/business-day-validation-with-snowflake-external-functions-stop-weekend-holiday-sla-misses/",
+      "date": "November 13, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access"
+      ]
+    },
+    {
+      "title": "Automating PII Governance in Snowflake",
+      "url": "https://cloudyard.in/2025/11/automating-pii-governance-in-snowflake/",
+      "date": "November 5, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Zero-Copy CRM: Read Snowflake from Salesforce with OAuth",
+      "url": "https://cloudyard.in/2025/10/zero-copy-crm-read-snowflake-from-salesforce-with-oauth/",
+      "date": "October 28, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "authentication",
+        "sso-oauth"
+      ]
+    },
+    {
+      "title": "Parallel Jobs with Snowpark (collect_nowait + async_job)",
+      "url": "https://cloudyard.in/2025/10/parallel-jobs-with-snowpark-collect_nowait-async_job/",
+      "date": "October 16, 2025",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Unifying Timestamps from Multiple Systems in Snowflake",
+      "url": "https://cloudyard.in/2025/10/unifying-timestamps-from-multiple-systems-in-snowflake/",
+      "date": "October 10, 2025",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "data-types"
+      ]
+    },
+    {
+      "title": "Fetch Live Data in Snowflake with External Access",
+      "url": "https://cloudyard.in/2025/10/fetch-live-data-in-snowflake-with-external-access/",
+      "date": "October 1, 2025",
+      "category": "Snowpark",
+      "topics": [
+        "external-access"
+      ]
+    },
+    {
+      "title": "Automating Password Expiry Notifications in Snowflake",
+      "url": "https://cloudyard.in/2025/09/automating-password-expiry-notifications-in-snowflake/",
+      "date": "September 24, 2025",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "alerts",
+        "authentication",
+        "sso-oauth"
+      ]
+    },
+    {
+      "title": "Unlocking the Power of Snowflake Cortex: Building a Unified AI App",
+      "url": "https://cloudyard.in/2025/09/unlocking-the-power-of-snowflake-cortex-building-a-unified-ai-app/",
+      "date": "September 10, 2025",
+      "category": "Streamlit",
+      "topics": [
+        "cortex-ai-functions",
+        "streamlit"
+      ]
+    },
+    {
+      "title": "dbt Tests in Snowflake: Override Failure Tables + Email Alerts",
+      "url": "https://cloudyard.in/2025/09/dbt-tests-in-snowflake-override-failure-tables-email-alerts/",
+      "date": "September 3, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "dbt",
+        "alerts"
+      ]
+    },
+    {
+      "title": "Building Iceberg Tables in Snowflake: Macros vs Native Support",
+      "url": "https://cloudyard.in/2025/08/building-iceberg-tables-in-snowflake-macros-vs-native-support/",
+      "date": "August 20, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "iceberg-tables",
+        "catalog-integrations"
+      ]
+    },
+    {
+      "title": "Cortex + dbt = No More Manual Minutes",
+      "url": "https://cloudyard.in/2025/08/cortex-dbt-no-more-manual-minutes/",
+      "date": "August 6, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "cortex-ai-functions",
+        "dbt"
+      ]
+    },
+    {
+      "title": "SQL & Python Unite: dbt Feature Pipeline",
+      "url": "https://cloudyard.in/2025/07/sql-python-unite-dbt-feature-pipeline/",
+      "date": "July 29, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "dbt",
+        "pipeline-design",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Tag, Mask, Protect: PII Handling in Snowflake",
+      "url": "https://cloudyard.in/2025/07/tag-mask-protect-pii-handling-in-snowflake/",
+      "date": "July 13, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging"
+      ]
+    },
+    {
+      "title": "DBT Incremental Models with Snowflake: Smart Filtering and Auditable Runs",
+      "url": "https://cloudyard.in/2025/05/dbt-incremental-models-with-snowflake-smart-filtering-and-auditable-runs/",
+      "date": "May 31, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "dbt"
+      ]
+    },
+    {
+      "title": "Golden Models with YAML Tests, Audit Logs & Email Alerts",
+      "url": "https://cloudyard.in/2025/05/golden-models-with-yaml-tests-audit-logs-email-alerts/",
+      "date": "May 22, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Zero-Touch DBT Models: Handle Schema Changes Without Effort",
+      "url": "https://cloudyard.in/2025/05/zero-touch-dbt-models-handle-schema-changes-without-effort/",
+      "date": "May 13, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "dbt"
+      ]
+    },
+    {
+      "title": "Automating Customer Data Load with DBT & Snowflake",
+      "url": "https://cloudyard.in/2025/05/automating-customer-data-load-with-dbt-snowflake/",
+      "date": "May 5, 2025",
+      "category": "DBT Scenario",
+      "topics": [
+        "dbt",
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake Data Quality Framework: Validate, Monitor, and Trust Your Data",
+      "url": "https://cloudyard.in/2025/04/snowflake-data-quality-framework-validate-monitor-and-trust-your-data/",
+      "date": "April 29, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Snowpark Magic: Auto-Validate Your S3 to Snowflake Data Loads",
+      "url": "https://cloudyard.in/2025/04/snowpark-magic-auto-validate-your-s3-to-snowflake-data-loads/",
+      "date": "April 23, 2025",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Data Masking in Snowflake Using Tags, Policies, and Automation",
+      "url": "https://cloudyard.in/2025/04/data-masking-in-snowflake-using-tags-policies-and-automation/",
+      "date": "April 7, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging"
+      ]
+    },
+    {
+      "title": "Snowpark Magic: Auto-Create Tables from S3 Folders",
+      "url": "https://cloudyard.in/2025/04/snowpark-magic-auto-create-tables-from-s3-files/",
+      "date": "April 2, 2025",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Optimizing Snowflake Serverless Tasks",
+      "url": "https://cloudyard.in/2025/03/optimizing-snowflake-serverless-tasks/",
+      "date": "March 28, 2025",
+      "category": "Discussion Forum",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Significance of Snowflake task graphs",
+      "url": "https://cloudyard.in/2025/03/significance-of-snowflake-task-graphs/",
+      "date": "March 22, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Automating CSV & Parquet File Ingestion from S3 to Snowflake",
+      "url": "https://cloudyard.in/2025/03/automating-csv-parquet-file-ingestion-from-s3-to-snowflake/",
+      "date": "March 13, 2025",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Masking in SF Without Hardcoded Roles: Including ARRAY cols",
+      "url": "https://cloudyard.in/2025/03/masking-in-sf-without-hardcoded-roles-including-array-cols/",
+      "date": "March 6, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Enhancing Snowflake Alerts for Dynamic Table Refresh Failures",
+      "url": "https://cloudyard.in/2025/02/enhancing-snowflake-alerts-for-dynamic-table-refresh-failures/",
+      "date": "February 25, 2025",
+      "category": "Snowflake Admin",
+      "topics": [
+        "dynamic-tables",
+        "alerts"
+      ]
+    },
+    {
+      "title": "Dynamic CSV Column Mapping with Stored Procedures",
+      "url": "https://cloudyard.in/2025/02/dynamic-csv-column-mapping-with-stored-procedures/",
+      "date": "February 17, 2025",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake Cost Monitoring with AWS CloudWatch & External Functions",
+      "url": "https://cloudyard.in/2025/02/snowflake-cost-monitoring-with-aws-cloudwatch-external-functions/",
+      "date": "February 11, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access",
+        "credit-usage",
+        "cost-attribution"
+      ]
+    },
+    {
+      "title": "Snowflake Meets Streamlit: Smarter Data Export",
+      "url": "https://cloudyard.in/2025/01/snowflake-meets-streamlit-smarter-data-export/",
+      "date": "January 30, 2025",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit"
+      ]
+    },
+    {
+      "title": "Schema Evolution with Case Sensitivity Handling in Snowflake",
+      "url": "https://cloudyard.in/2025/01/schema-evolution-with-case-sensitivity-handling-in-snowflake/",
+      "date": "January 21, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "infer-schema"
+      ]
+    },
+    {
+      "title": "Snowflake PARSE_DOC Meets Snowpark Power",
+      "url": "https://cloudyard.in/2025/01/snowflake-parse_doc-meets-snowpark-power/",
+      "date": "January 15, 2025",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Multi-Select Filtering with Streamlit and Snowflake",
+      "url": "https://cloudyard.in/2025/01/multi-select-filtering-with-streamlit-and-snowflake/",
+      "date": "January 7, 2025",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit"
+      ]
+    },
+    {
+      "title": "Private Listing and Masking Policies for Cross-Region Data Sharing",
+      "url": "https://cloudyard.in/2025/01/private-listing-and-masking-policies-for-cross-region-data-sharing/",
+      "date": "January 5, 2025",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Snowflake External Functions with AWS Lambda: Sentiment Analysis",
+      "url": "https://cloudyard.in/2024/12/integrating-snowflake-external-functions-with-aws-lambda/",
+      "date": "December 30, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access"
+      ]
+    },
+    {
+      "title": "Building ETL Pipeline with Snowpark",
+      "url": "https://cloudyard.in/2024/12/building-etl-pipeline-with-snowpark/",
+      "date": "December 25, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "File Archival in Snowflake: Snowpark-Powered Solution",
+      "url": "https://cloudyard.in/2024/12/file-archival-in-snowflake-snowpark-powered-solution/",
+      "date": "December 19, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Schema Evolution with View Refresh in Snowflake",
+      "url": "https://cloudyard.in/2024/12/schema-evolution-with-view-refresh-in-snowflake/",
+      "date": "December 16, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "infer-schema",
+        "views"
+      ]
+    },
+    {
+      "title": "Extracting DMF Details Across Schemas",
+      "url": "https://cloudyard.in/2024/12/extracting-dmf-details-across-schemas/",
+      "date": "December 11, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Monitor Snowflake Costs and resources with Streamlit",
+      "url": "https://cloudyard.in/2024/12/monitor-snowflake-costs-and-resources-with-streamlit/",
+      "date": "December 10, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit",
+        "credit-usage",
+        "cost-attribution"
+      ]
+    },
+    {
+      "title": "Directory Tables, Python UDF and Streams for PDF Processing",
+      "url": "https://cloudyard.in/2024/12/directory-tables-python-udf-and-streams-for-pdf-processing/",
+      "date": "December 3, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "unstructured",
+        "directory-tables",
+        "udfs",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Data Quality with Snowflake Data Metric Functions (DMF)",
+      "url": "https://cloudyard.in/2024/11/data-quality-with-snowflake-data-metric-functions-dmf/",
+      "date": "November 18, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Triggered Tasks in Snowflake",
+      "url": "https://cloudyard.in/2024/11/triggered-tasks-in-snowflake/",
+      "date": "November 12, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Splitting Large CSV Files in Snowflake Using Snowpark",
+      "url": "https://cloudyard.in/2024/11/splitting-large-csv-files-in-snowflake-using-snowpark/",
+      "date": "November 5, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Data Security with Snowflake: Row Access, Masking, and Projection Policies",
+      "url": "https://cloudyard.in/2024/11/data-security-with-snowflake-row-access-masking-and-projection-policies/",
+      "date": "November 1, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Tracking Schema Changes in Iceberg Tables Using Metadata Files",
+      "url": "https://cloudyard.in/2024/10/tracking-schema-changes-in-iceberg-tables-using-metadata-files/",
+      "date": "October 15, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "iceberg-tables",
+        "catalog-integrations"
+      ]
+    },
+    {
+      "title": "Tracking DDL Changes in Snowflake: A Real-World Solution",
+      "url": "https://cloudyard.in/2024/10/tracking-ddl-changes-in-snowflake-a-real-world-solution/",
+      "date": "October 8, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "access-history"
+      ]
+    },
+    {
+      "title": "Unlocking the Power of Snowpark DataFrames with Modin",
+      "url": "https://cloudyard.in/2024/10/unlocking-the-power-of-snowpark-dataframes-with-modin/",
+      "date": "October 1, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Masking Sensitive Data in External Tables",
+      "url": "https://cloudyard.in/2024/09/masking-sensitive-data-in-external-tables/",
+      "date": "September 23, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "external-tables"
+      ]
+    },
+    {
+      "title": "Migrating Source Views to Snowflake – Discrepancy in View Definition",
+      "url": "https://cloudyard.in/2024/09/migrating-source-views-to-snowflake-discrepancy-in-view-definition/",
+      "date": "September 11, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "views",
+        "migration-strategy"
+      ]
+    },
+    {
+      "title": "Python Files within Snowflake Python Procedures",
+      "url": "https://cloudyard.in/2024/09/python-files-within-snowflake-python-procedures/",
+      "date": "September 3, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "stored-procedures",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Warehouse Grants Summary Report",
+      "url": "https://cloudyard.in/2024/08/warehouse-grants-summary-report/",
+      "date": "August 29, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "warehouse-basics",
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Automating Report Distribution with Snowpark",
+      "url": "https://cloudyard.in/2024/08/automating-report-distribution-with-snowpark/",
+      "date": "August 21, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Data Synchronization with Dynamic Procedures",
+      "url": "https://cloudyard.in/2024/08/data-synchronization-with-dynamic-procedures/",
+      "date": "August 9, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Dynamic Table Creation Using File Headers",
+      "url": "https://cloudyard.in/2024/07/dynamic-table-creation-using-file-headers/",
+      "date": "July 31, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "dynamic-tables"
+      ]
+    },
+    {
+      "title": "Direct Integration: Kinesis Firehose with Snowpipe Streaming",
+      "url": "https://cloudyard.in/2024/07/direct-integration-kinesis-firehose-with-snowpipe-streaming/",
+      "date": "July 23, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "drivers-connectors",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Unleash the Power of SCD2 with Finalizer Tasks",
+      "url": "https://cloudyard.in/2024/07/unleash-the-power-of-scd2-with-finalizer-tasks/",
+      "date": "July 16, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Automating Warehouse Usage Reports in Snowflake",
+      "url": "https://cloudyard.in/2024/07/automating-warehouse-usage-reports-in-snowflake/",
+      "date": "July 11, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "warehouse-basics"
+      ]
+    },
+    {
+      "title": "Sales Insights: Snowflake & Streamlit Dashboard",
+      "url": "https://cloudyard.in/2024/07/sales-insights-snowflake-streamlit-dashboard/",
+      "date": "July 3, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit"
+      ]
+    },
+    {
+      "title": "Automating Business Day-Specific Tasks with Snowflake",
+      "url": "https://cloudyard.in/2024/06/automating-business-day-specific-tasks-with-snowflake/",
+      "date": "June 27, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Use Case for Loading Daily Feeds into Snowflake",
+      "url": "https://cloudyard.in/2024/06/use-case-for-loading-daily-feeds-into-snowflake/",
+      "date": "June 16, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Tasks Failure Recovery in Snowflake with RETRY LAST",
+      "url": "https://cloudyard.in/2024/06/tasks-failure-recovery-in-snowflake-with-retry-last/",
+      "date": "June 12, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Enhancing Customer Insights with Snowflake and Snowpark",
+      "url": "https://cloudyard.in/2024/06/enhancing-customer-insights-with-snowflake-and-snowpark/",
+      "date": "June 9, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Analyzing Table Usage in Stored Procedures",
+      "url": "https://cloudyard.in/2024/06/analyzing-table-usage-in-stored-procedures/",
+      "date": "June 3, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Automating Notifications to an Email Distribution List",
+      "url": "https://cloudyard.in/2024/05/automating-notifications-to-an-email-distribution-list/",
+      "date": "May 24, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Dynamic Table and Alerts for Customer Purchase Notifications",
+      "url": "https://cloudyard.in/2024/05/dynamic-table-and-alerts-for-customer-purchase-notifications/",
+      "date": "May 17, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "dynamic-tables",
+        "alerts"
+      ]
+    },
+    {
+      "title": "Disable Inactive Users in Snowflake",
+      "url": "https://cloudyard.in/2024/05/disable-inactive-users-in-snowflake/",
+      "date": "May 15, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Use Case: Monitoring Internal Stage Stale Storage",
+      "url": "https://cloudyard.in/2024/05/use-case-monitoring-internal-stage-stale-storage/",
+      "date": "May 8, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "credit-usage",
+        "storage-cost",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Dynamic Merge Procedure: Snowflake’s Enhanced Flexibility",
+      "url": "https://cloudyard.in/2024/05/dynamic-merge-procedure-snowflakes-enhanced-flexibility/",
+      "date": "May 3, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Aggregation Policy in Snowflake",
+      "url": "https://cloudyard.in/2024/04/aggregation-policy-in-snowflake/",
+      "date": "April 24, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Dynamic Merge in Snowflake",
+      "url": "https://cloudyard.in/2024/04/dynamic-merge-in-snowflake/",
+      "date": "April 19, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Credit Consumption Notification by Role",
+      "url": "https://cloudyard.in/2024/04/credit-consumption-notification-by-role/",
+      "date": "April 12, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "alerts",
+        "credit-usage",
+        "cost-attribution",
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Identifying Table Types Within a Session",
+      "url": "https://cloudyard.in/2024/04/identifying-table-types-within-a-session/",
+      "date": "April 10, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Customer Segmentation with Snowpark",
+      "url": "https://cloudyard.in/2024/04/customer-segmentation-with-snowpark/",
+      "date": "April 4, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Keeping an Eye on Your Snowflake Warehouse: Automated Monitoring and Email Alerts",
+      "url": "https://cloudyard.in/2024/04/keeping-an-eye-on-your-snowflake-warehouse-automated-monitoring-and-email-alerts/",
+      "date": "April 1, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "alerts",
+        "warehouse-basics"
+      ]
+    },
+    {
+      "title": "Exploring Books with Snowpark and Streamlit",
+      "url": "https://cloudyard.in/2024/03/exploring-books-with-snowpark-and-streamlit/",
+      "date": "March 4, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "snowpark",
+        "streamlit"
+      ]
+    },
+    {
+      "title": "Automating Dynamic Table Creation with Event Logging",
+      "url": "https://cloudyard.in/2024/02/automating-dynamic-table-creation-with-event-logging/",
+      "date": "February 27, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "dynamic-tables",
+        "event-tables"
+      ]
+    },
+    {
+      "title": "Simplifying Data Processing with Snowpark",
+      "url": "https://cloudyard.in/2024/02/simplifying-data-processing-with-snowpark/",
+      "date": "February 19, 2024",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark"
+      ]
+    },
+    {
+      "title": "Snowflake Cloning Facts",
+      "url": "https://cloudyard.in/2024/02/snowflake-cloning-facts/",
+      "date": "February 12, 2024",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cloning",
+        "time-travel"
+      ]
+    },
+    {
+      "title": "Suspend Child Tasks Programatically",
+      "url": "https://cloudyard.in/2024/02/suspend-child-tasks-programatically/",
+      "date": "February 8, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Read Excel using SnowflakeFile.open",
+      "url": "https://cloudyard.in/2024/01/read-excel-using-snowflakefile-open/",
+      "date": "January 31, 2024",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Streamlit: Create and Load Table Dynamically",
+      "url": "https://cloudyard.in/2024/01/streamlit-create-and-load-table-dynamically/",
+      "date": "January 24, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit",
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Streamlit App: Export DDL",
+      "url": "https://cloudyard.in/2024/01/streamlit-app-export-ddl/",
+      "date": "January 16, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit"
+      ]
+    },
+    {
+      "title": "SHARE Restrictions in Snowflake",
+      "url": "https://cloudyard.in/2024/01/share-restrictions-in-snowflake/",
+      "date": "January 12, 2024",
+      "category": "Snowflake Admin",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Automate COPY Load Audit Process",
+      "url": "https://cloudyard.in/2024/01/automate-copy-load-audit-process/",
+      "date": "January 2, 2024",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowsight Dashboard in Streamlit",
+      "url": "https://cloudyard.in/2024/01/snowsight-dashboard-in-streamlit/",
+      "date": "January 1, 2024",
+      "category": "Streamlit",
+      "topics": [
+        "streamlit"
+      ]
+    },
+    {
+      "title": "Add Column Comments Dynamically",
+      "url": "https://cloudyard.in/2023/12/add-comments-dynamically/",
+      "date": "December 20, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Data Sharing with Listing in snowflake",
+      "url": "https://cloudyard.in/2023/12/data-sharing-with-listing-in-snowflake/",
+      "date": "December 8, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Object Privileges in CLONE",
+      "url": "https://cloudyard.in/2023/11/object-privileges-in-clone/",
+      "date": "November 29, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "cloning",
+        "time-travel",
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Dynamic Copy Process",
+      "url": "https://cloudyard.in/2023/11/dynamic-copy-process/",
+      "date": "November 17, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Execute Immediate From Stage",
+      "url": "https://cloudyard.in/2023/11/execute-immediate-from-stage/",
+      "date": "November 6, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Schema Evolution with CSV",
+      "url": "https://cloudyard.in/2023/10/schema-evolution-with-csv/",
+      "date": "October 23, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "infer-schema",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake Python UDFs: An overview",
+      "url": "https://cloudyard.in/2023/10/snowflake-python-udfs-an-overview/",
+      "date": "October 17, 2023",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "udfs",
+        "drivers-connectors",
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Streams on Consumer Account",
+      "url": "https://cloudyard.in/2023/10/streams-on-consumer-account/",
+      "date": "October 10, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "streams"
+      ]
+    },
+    {
+      "title": "Snowflake: Tag-based Masking Policies",
+      "url": "https://cloudyard.in/2023/09/snowflake-tag-based-masking-policies/",
+      "date": "September 26, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging"
+      ]
+    },
+    {
+      "title": "Split File using ADF COPY and AWS script",
+      "url": "https://cloudyard.in/2023/09/split-file-using-adf-copy-and-aws-script/",
+      "date": "September 20, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake:SCD2 with Dynamic Tables",
+      "url": "https://cloudyard.in/2023/09/snowflakescd2-with-dynamic-tables/",
+      "date": "September 14, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "dynamic-tables",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Snowflake Dynamic Tables",
+      "url": "https://cloudyard.in/2023/09/snowflake-dynamic-tables/",
+      "date": "September 5, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "dynamic-tables"
+      ]
+    },
+    {
+      "title": "Snowflake: Amazon S3-compatible Storage with Cloudflare",
+      "url": "https://cloudyard.in/2023/08/snowflake-amazon-s3-compatible-storage-with-cloudflare/",
+      "date": "August 22, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "udfs"
+      ]
+    },
+    {
+      "title": "Snowflake: UNIX File validation with SnowSQL",
+      "url": "https://cloudyard.in/2023/08/snowflake-unix-file-validation-with-snowsql/",
+      "date": "August 13, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats",
+        "snowflake-cli"
+      ]
+    },
+    {
+      "title": "SQL Scripting with Event Tables",
+      "url": "https://cloudyard.in/2023/07/sql-scripting-with-event-tables/",
+      "date": "July 21, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "event-tables",
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "JS Proc with Event Tables",
+      "url": "https://cloudyard.in/2023/07/js-proc-with-event-tables/",
+      "date": "July 17, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "event-tables",
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Snowflake: Logging with Event tables",
+      "url": "https://cloudyard.in/2023/07/snowflake-logging-with-event-tables/",
+      "date": "July 11, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "event-tables"
+      ]
+    },
+    {
+      "title": "ODBC connector with Azure IR Contd..",
+      "url": "https://cloudyard.in/2023/07/odbc-connector-with-azure-ir-contd/",
+      "date": "July 5, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake ODBC connector with Azure IR",
+      "url": "https://cloudyard.in/2023/07/snowflake-odbc-connector-with-azure-ir/",
+      "date": "July 3, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake:Dynamic Warehouse Allocation",
+      "url": "https://cloudyard.in/2023/06/snowflakedynamic-warehouse-allocation/",
+      "date": "June 26, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "warehouse-basics"
+      ]
+    },
+    {
+      "title": "AWS EventBridge Integration with Snowpipe",
+      "url": "https://cloudyard.in/2023/06/aws-eventbridge-integration-with-snowpipe/",
+      "date": "June 20, 2023",
+      "category": "Discussion Forum",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowflake: Rename Custom Role to New Name",
+      "url": "https://cloudyard.in/2023/06/snowflake-rename-custom-role-to-new-name/",
+      "date": "June 11, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Data Ingestion with Glue and Snowpark",
+      "url": "https://cloudyard.in/2023/06/data-ingestion-with-glue-and-snowpark/",
+      "date": "June 6, 2023",
+      "category": "Snowpark",
+      "topics": [
+        "snowpark",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake to Salesforce using Recipes",
+      "url": "https://cloudyard.in/2023/05/salesforce-to-snowflake-using-recipes/",
+      "date": "May 31, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "authentication",
+        "sso-oauth"
+      ]
+    },
+    {
+      "title": "Identify underlying table in VIEWS via procedure",
+      "url": "https://cloudyard.in/2023/05/identify-underlying-table-in-views-via-procedure/",
+      "date": "May 26, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "views"
+      ]
+    },
+    {
+      "title": "Snowflake: Streams on Views",
+      "url": "https://cloudyard.in/2023/05/snowflake-streams-on-views/",
+      "date": "May 11, 2023",
+      "category": "Discussion Forum",
+      "topics": [
+        "streams",
+        "views"
+      ]
+    },
+    {
+      "title": "Tag-Based Masking Policy",
+      "url": "https://cloudyard.in/2023/05/tag-based-masking-policy/",
+      "date": "May 4, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging"
+      ]
+    },
+    {
+      "title": "Transfer ACCOUNTADMIN Ownership to Custom Role",
+      "url": "https://cloudyard.in/2023/04/transfer-accountadmin-ownership-to-custom-role/",
+      "date": "April 26, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Session Policy in Snowflake",
+      "url": "https://cloudyard.in/2023/04/session-policy-in-snowflake/",
+      "date": "April 21, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "ARRAY in Java Script Procedure",
+      "url": "https://cloudyard.in/2023/04/array-in-java-script-procedure/",
+      "date": "April 11, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Directory Tables functions",
+      "url": "https://cloudyard.in/2023/04/directory-tables-functions/",
+      "date": "April 7, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Directory Tables : Access Unstructured Data",
+      "url": "https://cloudyard.in/2023/03/directory-tables-access-unstructured-data/",
+      "date": "March 30, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Snowflake: Virtual Column in Data Load",
+      "url": "https://cloudyard.in/2023/03/snowflake-virtual-column-in-data-load/",
+      "date": "March 21, 2023",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake ALERTS",
+      "url": "https://cloudyard.in/2023/03/snowflake-alerts/",
+      "date": "March 16, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Data Cloud Deployment Framework: Architecture",
+      "url": "https://cloudyard.in/2023/03/data-cloud-deployment-framework-architecture/",
+      "date": "March 4, 2023",
+      "category": "Discussion Forum",
+      "topics": [
+        "medallion-architecture",
+        "architecture"
+      ]
+    },
+    {
+      "title": "Snowflake: Identify NULL Columns in Table",
+      "url": "https://cloudyard.in/2023/02/snowflake-identify-null-columns-in-table/",
+      "date": "February 25, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "TASK failure Notification",
+      "url": "https://cloudyard.in/2023/02/task-failure-notification/",
+      "date": "February 10, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks",
+        "alerts"
+      ]
+    },
+    {
+      "title": "JSON.parse () and JSON.stringify()",
+      "url": "https://cloudyard.in/2023/02/json-parse-and-json-stringify/",
+      "date": "February 6, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Exception Handling Sql Scripting",
+      "url": "https://cloudyard.in/2023/01/exception-handling-sql-scripting/",
+      "date": "January 29, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Snowflake Tasks: SetValue and GetValue",
+      "url": "https://cloudyard.in/2023/01/snowflake-tasks-setvalue-and-getvalue/",
+      "date": "January 19, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "GET_DDL: Sql Script, JS and Python",
+      "url": "https://cloudyard.in/2023/01/get_ddl-sql-script-js-and-python/",
+      "date": "January 13, 2023",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Clustering on Normal, CLONE, COPY tables",
+      "url": "https://cloudyard.in/2023/01/clustering-on-normal-clone-copy-tables/",
+      "date": "January 7, 2023",
+      "category": "Discussion Forum",
+      "topics": [
+        "cloning",
+        "time-travel",
+        "micro-partitions",
+        "pruning-clustering"
+      ]
+    },
+    {
+      "title": "Snowflake: Database Role",
+      "url": "https://cloudyard.in/2023/01/snowflake-database-role/",
+      "date": "January 1, 2023",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Snowflake: SSE File Encryption using AWS KMS",
+      "url": "https://cloudyard.in/2022/12/snowflake-sse-file-encryption-using-aws-kms/",
+      "date": "December 28, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "SHARES: Extract Details about Objects",
+      "url": "https://cloudyard.in/2022/12/shares-extract-details-about-objects/",
+      "date": "December 23, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Snowflake and S3 Data Lake",
+      "url": "https://cloudyard.in/2022/12/snowflake-and-s3-data-lake/",
+      "date": "December 14, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Query Acceleration Service in Snowflake",
+      "url": "https://cloudyard.in/2022/12/qas/",
+      "date": "December 10, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "qas"
+      ]
+    },
+    {
+      "title": "User Notification: SYSTEM$SEND_EMAIL()",
+      "url": "https://cloudyard.in/2022/12/user-notification-systemsend_email/",
+      "date": "December 5, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "alerts"
+      ]
+    },
+    {
+      "title": "Cloning:Schema Object Privileges",
+      "url": "https://cloudyard.in/2022/11/cloningschema-object-privileges/",
+      "date": "November 29, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cloning",
+        "time-travel",
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Snowflake: Provisioning in AAD to synch Users",
+      "url": "https://cloudyard.in/2022/11/snowflake-provisioning-in-aad-to-synch-users/",
+      "date": "November 23, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Snowflake SSO Login with Azure Active Directory",
+      "url": "https://cloudyard.in/2022/11/snowflake-sso-login-with-azure-active-directory/",
+      "date": "November 18, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "role-hierarchy",
+        "scim"
+      ]
+    },
+    {
+      "title": "Snowflake: Datapipeline with Glue and Snowpipe",
+      "url": "https://cloudyard.in/2022/11/snowflake-datapipeline-with-glue-and-snowpipe/",
+      "date": "November 10, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access",
+        "copy-into",
+        "stages",
+        "pipeline-design",
+        "drivers-connectors",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowflake: Query Acceleration Service",
+      "url": "https://cloudyard.in/2022/11/snowflake-query-acceleration-service/",
+      "date": "November 3, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "qas"
+      ]
+    },
+    {
+      "title": "External Tables: Vectorized Scanner",
+      "url": "https://cloudyard.in/2022/10/external-tables-vectorized-scanner/",
+      "date": "October 26, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "Snowflake: MATCH_RECOGNIZE()",
+      "url": "https://cloudyard.in/2022/10/snowflake-match_recognize/",
+      "date": "October 21, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Multicloud:Streams on External Table",
+      "url": "https://cloudyard.in/2022/10/multicloudstreams-on-external-table/",
+      "date": "October 18, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-tables",
+        "streams"
+      ]
+    },
+    {
+      "title": "Copy and Unload via Javascript Procedure",
+      "url": "https://cloudyard.in/2022/10/copy-and-unload-via-javascript-procedure/",
+      "date": "October 14, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "GET_OBJECT_REFERENCES: Get View and Table count",
+      "url": "https://cloudyard.in/2022/10/get_object_references-get-view-and-table-count/",
+      "date": "October 11, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Dynamic Masking on JSON Data",
+      "url": "https://cloudyard.in/2022/10/dynamic-masking-on-json-data/",
+      "date": "October 5, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Identify Long Runner and Kill automatically: JS Proc",
+      "url": "https://cloudyard.in/2022/09/identify-long-runner-and-kill-automatically-js-proc/",
+      "date": "September 28, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "query-profile",
+        "query-history-analysis"
+      ]
+    },
+    {
+      "title": "Data Quality Features in Snowflake : Part2",
+      "url": "https://cloudyard.in/2022/09/data-quality-features-in-snowflake-part2/",
+      "date": "September 25, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Data Quality Features in Snowflake : Part1",
+      "url": "https://cloudyard.in/2022/09/data-quality-features-in-snowflake-part1/",
+      "date": "September 21, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "data-metric-functions"
+      ]
+    },
+    {
+      "title": "Snowflake to Python :Read_Sql() and Fetch_Pandas()",
+      "url": "https://cloudyard.in/2022/09/snowflake-to-python-read_sql-and-fetch_pandas/",
+      "date": "September 16, 2022",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake: Truncate and Delete",
+      "url": "https://cloudyard.in/2022/09/snowflake-truncate-and-delete/",
+      "date": "September 13, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Object tagging with Dynamic Masking",
+      "url": "https://cloudyard.in/2022/09/object-tagging-with-dynamic-masking/",
+      "date": "September 7, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "tagging"
+      ]
+    },
+    {
+      "title": "Serverless Task in Snowflake",
+      "url": "https://cloudyard.in/2022/09/serverless_task/",
+      "date": "September 2, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Snowpipe: Send Email notification on Error",
+      "url": "https://cloudyard.in/2022/08/snowpipe-send-email-notification-on-error/",
+      "date": "August 29, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "alerts",
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "JavaScript to execute DML statements in Table",
+      "url": "https://cloudyard.in/2022/08/javascript-to-execute-dml-statements-in-table/",
+      "date": "August 21, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Data Comparison: Two Tables in Different DB",
+      "url": "https://cloudyard.in/2022/08/data-comparison-two-tables-in-different-db/",
+      "date": "August 15, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Huge file vs Smaller Chunks in COPY Command",
+      "url": "https://cloudyard.in/2022/08/huge-file-vs-smaller-chunks-in-copy-command/",
+      "date": "August 12, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Third-Party Packages from Anaconda in Snowflake",
+      "url": "https://cloudyard.in/2022/08/third-party-packages-from-anaconda-in-snowflake/",
+      "date": "August 3, 2022",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "udfs"
+      ]
+    },
+    {
+      "title": "Snowflake:Transferring Pipe Ownership",
+      "url": "https://cloudyard.in/2022/07/snowflaketransferring-pipe-ownership/",
+      "date": "July 29, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowflake:SQL Scripting Procedure to find Duplicate",
+      "url": "https://cloudyard.in/2022/07/snowflakesql-scripting-procedure-to-find-duplicate/",
+      "date": "July 26, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Secondary Roles in Snowflake",
+      "url": "https://cloudyard.in/2022/07/secondary-roles-in-snowflake/",
+      "date": "July 19, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "secondary-roles"
+      ]
+    },
+    {
+      "title": "DIRECTORY Table: Download File from Internal Stage",
+      "url": "https://cloudyard.in/2022/07/directory-table-download-file-from-internal-stage/",
+      "date": "July 15, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "copy-into",
+        "stages",
+        "unstructured",
+        "directory-tables",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "ADF Script Activity to load Snowflake",
+      "url": "https://cloudyard.in/2022/07/adf-script-activity-to-load-snowflake/",
+      "date": "July 11, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Directory Tables in Snowflake: Download file from WebUI",
+      "url": "https://cloudyard.in/2022/07/directory-tables-in-snowflake-download-file-from-webui/",
+      "date": "July 7, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "copy-into",
+        "stages",
+        "unstructured",
+        "directory-tables",
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Dynamic Masking:Conditional Policy in snowflake",
+      "url": "https://cloudyard.in/2022/07/dynamic-maskingconditional-policy-in-snowflake/",
+      "date": "July 4, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Snowflake: Supplement column in Feed file",
+      "url": "https://cloudyard.in/2022/06/snowflake-supplement-column-in-feed-file/",
+      "date": "June 28, 2022",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Copy AWS S3 –> ADLS Gen2 –> Snowflake: Part2",
+      "url": "https://cloudyard.in/2022/06/copy-aws-s3-adls-gen2-snowflake-part2/",
+      "date": "June 24, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake: Copy AWS S3 to ADLS Gen2 Part1",
+      "url": "https://cloudyard.in/2022/06/snowflake-copy-aws-s3-to-adls-gen2-part1/",
+      "date": "June 21, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Troubleshoot Snowpipe Data load error",
+      "url": "https://cloudyard.in/2022/06/troubleshoot-snowpipe-data-load-error/",
+      "date": "June 17, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Configure Snowflake Storage Integration with AZURE",
+      "url": "https://cloudyard.in/2022/06/configure-snowflake-storage-integration-with-azure/",
+      "date": "June 14, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake: Auto Refresh in External Tables",
+      "url": "https://cloudyard.in/2022/06/snowflake-auto-refresh-in-external-tables/",
+      "date": "June 5, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "Snowpipe: Load multiple tables with same bucket",
+      "url": "https://cloudyard.in/2022/06/snowpipe-load-multiple-tables-with-same-bucket/",
+      "date": "June 2, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowflake: Extract and Create DDL via Sql Scripting",
+      "url": "https://cloudyard.in/2022/05/snowflake-extract-and-create-ddl-via-sql-scripting/",
+      "date": "May 25, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Connect Excel with Snowflake using ODBC",
+      "url": "https://cloudyard.in/2022/05/connect-excel-with-snowflake-using-odbc/",
+      "date": "May 19, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "unstructured",
+        "directory-tables",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake: Handle Duplicate Records Dynamically",
+      "url": "https://cloudyard.in/2022/05/snowflake-handle-duplicate-records-dynamically/",
+      "date": "May 13, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Snowflake Python REST API",
+      "url": "https://cloudyard.in/2022/05/snowflake-python-rest-api/",
+      "date": "May 9, 2022",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "external-access",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Materialized View on Shared Data",
+      "url": "https://cloudyard.in/2022/05/materialized-view-on-shared-data/",
+      "date": "May 2, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "materialized-views",
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Snowflake python: SnowflakeNoConverterToPython",
+      "url": "https://cloudyard.in/2022/04/snowflake-python-snowflakenoconvertertopython/",
+      "date": "April 27, 2022",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Parse API JSON Response to Relational",
+      "url": "https://cloudyard.in/2022/04/parse-api-json-response-to-relational/",
+      "date": "April 20, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access",
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "External Function in Snowflake : API Integration",
+      "url": "https://cloudyard.in/2022/04/external-function-in-snowflake-api-integration/",
+      "date": "April 15, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access"
+      ]
+    },
+    {
+      "title": "External Function in Snowflake",
+      "url": "https://cloudyard.in/2022/04/external-function-in-snowflake/",
+      "date": "April 13, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-access"
+      ]
+    },
+    {
+      "title": "AccuWeather’s DB analysis on Snowflake marketplace",
+      "url": "https://cloudyard.in/2022/04/accuweathers-db-analysis-on-snowflake-marketplace/",
+      "date": "April 7, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "listings"
+      ]
+    },
+    {
+      "title": "FILE FORMAT Parameters",
+      "url": "https://cloudyard.in/2022/04/file-formats-parameters/",
+      "date": "April 5, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats",
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "DROP TASKS Programatically",
+      "url": "https://cloudyard.in/2022/04/drop-tasks-programatically/",
+      "date": "April 1, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "UNDROP or RECOVER Table Programmatically",
+      "url": "https://cloudyard.in/2022/03/undrop-or-recover-table-programmatically/",
+      "date": "March 27, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "undrop"
+      ]
+    },
+    {
+      "title": "Secure Views: SIMULATED_DATA_SHARING_CONSUMER Parameter",
+      "url": "https://cloudyard.in/2022/03/secure-views-simulated_data_sharing_consumer-parameter/",
+      "date": "March 20, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "views",
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "TRANSACTION LOCKS in Snowflake",
+      "url": "https://cloudyard.in/2022/03/transaction-locks-in-snowflake/",
+      "date": "March 15, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Object Ownership with Roles contd…",
+      "url": "https://cloudyard.in/2022/03/object-ownership-with-roles-contd/",
+      "date": "March 11, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Align usage of Object Ownership with ROLES",
+      "url": "https://cloudyard.in/2022/03/align-usage-of-object-ownership-with-roles/",
+      "date": "March 9, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Data Exfiltration in Snowflake…",
+      "url": "https://cloudyard.in/2022/03/data-exfiltration-in-snowflake/",
+      "date": "March 3, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "CONNECT_BY_ISLEAF in Snowflake",
+      "url": "https://cloudyard.in/2022/02/connect_by_isleaf-in-snowflake/",
+      "date": "February 27, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowflake: FLATTEN JSON with OUTER switch",
+      "url": "https://cloudyard.in/2022/02/snowflake-flatten-json-with-outer-switch/",
+      "date": "February 22, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowpipe REFRESH : Process older files in Bucket",
+      "url": "https://cloudyard.in/2022/02/snowpipe-refresh-process-older-files-in-bucket/",
+      "date": "February 17, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowflake: IS_GRANTED_TO_INVOKER_ROLE function",
+      "url": "https://cloudyard.in/2022/02/snowflake-is_granted_to_invoker_role-function/",
+      "date": "February 15, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Snowflake : Configure Resource Monitor",
+      "url": "https://cloudyard.in/2022/02/snowflake-configure-resource-monitor/",
+      "date": "February 10, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "resource-monitors"
+      ]
+    },
+    {
+      "title": "Data Migration : Oracle AWS RDS to Snowflake via DMS",
+      "url": "https://cloudyard.in/2022/02/data-migration-oracle-aws-rds-to-snowflake-via-dms/",
+      "date": "February 7, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "migration-strategy"
+      ]
+    },
+    {
+      "title": "Snowflake : PATTERN with REGEX in COPY command",
+      "url": "https://cloudyard.in/2022/02/snowflake-pattern-with-regex-in-copy-command/",
+      "date": "February 1, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake : Internal Stage and External Stage ….",
+      "url": "https://cloudyard.in/2022/01/snowflake-internal-stage-and-external-stage/",
+      "date": "January 28, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Logging: DBMS_OUTPUT in Snowflake Stored Procedures",
+      "url": "https://cloudyard.in/2022/01/logging-dbms_output-in-snowflake-stored-procedures/",
+      "date": "January 23, 2022",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures",
+        "event-tables"
+      ]
+    },
+    {
+      "title": "MultiClustering in Snowflake",
+      "url": "https://cloudyard.in/2022/01/multiclustering-in-snowflake/",
+      "date": "January 20, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "micro-partitions",
+        "pruning-clustering",
+        "multi-cluster"
+      ]
+    },
+    {
+      "title": "Snowflake: Data protection and High Availability",
+      "url": "https://cloudyard.in/2022/01/snowflake-data-protection-and-high-availability/",
+      "date": "January 16, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "Snowflake: Create Empty table using df.head(0).to_sql",
+      "url": "https://cloudyard.in/2022/01/snowflake-create-empty-table-using-df-head0-to_sql/",
+      "date": "January 13, 2022",
+      "category": "Discussion Forum",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Long Running Queries in Snowflake: QUERY_HISTORY function",
+      "url": "https://cloudyard.in/2022/01/long-running-queries-in-snowflake-query_history-function/",
+      "date": "January 10, 2022",
+      "category": "Snowflake Admin",
+      "topics": [
+        "query-profile",
+        "query-history-analysis"
+      ]
+    },
+    {
+      "title": "AWS Amazon AppFlow: Salesforce to Snowflake Integration",
+      "url": "https://cloudyard.in/2022/01/aws-amazon-appflow-salesforce-to-snowflake-integration/",
+      "date": "January 6, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "authentication",
+        "sso-oauth"
+      ]
+    },
+    {
+      "title": "AWS Glue : Data Masking in S3 Bucket –> Snowflake",
+      "url": "https://cloudyard.in/2022/01/aws-glue-data-masking-in-s3-bucket-snowflake/",
+      "date": "January 3, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "copy-into",
+        "stages",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake: SCALAR and TABULAR UDF in SELECT query",
+      "url": "https://cloudyard.in/2022/01/snowflake-scalar-and-tabular-udf-in-select-query/",
+      "date": "January 2, 2022",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "udfs"
+      ]
+    },
+    {
+      "title": "Snowflake: ROLLBACK and COMMIT in JavaScript Procedure",
+      "url": "https://cloudyard.in/2021/12/snowflake-rollback-and-commit-in-javascript-procedure/",
+      "date": "December 30, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Snowflake: JavaScript Procedure to load Parquet data",
+      "url": "https://cloudyard.in/2021/12/snowflake-javascript-procedure-to-load-parquet-data/",
+      "date": "December 27, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Data Pipeline Flow: Snowflake with Kinesis, Glue, Lambda, Snowpipe: Part2",
+      "url": "https://cloudyard.in/2021/12/data-pipeline-flow-snowflake-with-kinesis-glue-lambda-snowpipe-part2/",
+      "date": "December 22, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "pipeline-design",
+        "drivers-connectors",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Data Pipeline: Snowflake with Kinesis, Glue, Lambda, Snowpipe: Part1",
+      "url": "https://cloudyard.in/2021/12/data-pipeline-snowflake-with-kinesis-glue-lambda-snowpipe-part1/",
+      "date": "December 19, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "pipeline-design",
+        "drivers-connectors",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Data Pipeline: AWS Glue with Lambda and Snowflake",
+      "url": "https://cloudyard.in/2021/12/data-pipeline-aws-glue-with-lambda-and-snowflake/",
+      "date": "December 16, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "pipeline-design",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "AWS GLUE Connect with SNOWFLAKE",
+      "url": "https://cloudyard.in/2021/12/aws-glue-connect-with-snowflake/",
+      "date": "December 13, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Salesforce to Snowflake: Handle to_Sql Dataframe Error",
+      "url": "https://cloudyard.in/2021/12/salesforce-to-snowflake-handle-to_sql-dataframe-error/",
+      "date": "December 6, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Salesforce to Snowflake using Python",
+      "url": "https://cloudyard.in/2021/12/salesforce-to-snowflake-using-python/",
+      "date": "December 2, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake: Process PDF Unstructured Data file to Snowflake",
+      "url": "https://cloudyard.in/2021/11/snowflake-process-pdf-unstructured-data-file-to-snowflake/",
+      "date": "November 30, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Snowflake: Validate SQL file before ingestion",
+      "url": "https://cloudyard.in/2021/11/snowflake-validate-sql-file-before-ingestion/",
+      "date": "November 24, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake: Transaction Block with STREAMS",
+      "url": "https://cloudyard.in/2021/11/snowflake-transaction-block-with-streams/",
+      "date": "November 21, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "streams"
+      ]
+    },
+    {
+      "title": "Snowflake: Enable CHANGE_TRACKING for multiple tables",
+      "url": "https://cloudyard.in/2021/11/snowflake-enable-change_tracking-for-multiple-tables/",
+      "date": "November 16, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "streams"
+      ]
+    },
+    {
+      "title": "Snowflake:Ingest Multiple JSON files at Runtime",
+      "url": "https://cloudyard.in/2021/11/snowflakeingest-multiple-json-files-at-runtime/",
+      "date": "November 11, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Generate Multiple files Table Structure to Snowflake via Python",
+      "url": "https://cloudyard.in/2021/11/generate-multiple-files-table-structure-to-snowflake-via-python/",
+      "date": "November 8, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "ACCESS_HISTORY View: Get Mostly Queried Table",
+      "url": "https://cloudyard.in/2021/11/access_history-view-get-most-queried-table/",
+      "date": "November 5, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "access-history"
+      ]
+    },
+    {
+      "title": "Snowflake: Setting SESSION parameter via Stored Procedure",
+      "url": "https://cloudyard.in/2021/10/snowflake-setting-session-parameter-via-stored-procedure/",
+      "date": "October 30, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Snowflake: Handle Duplicate Records with HASH(*) function",
+      "url": "https://cloudyard.in/2021/10/snowflake-handle-duplicate-records-with-hash-function/",
+      "date": "October 26, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "pipeline-design"
+      ]
+    },
+    {
+      "title": "Snowflake: RBAC + Warehouse Usage Queries",
+      "url": "https://cloudyard.in/2021/10/snowflake-rbac-warehouse-usage-queries/",
+      "date": "October 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "warehouse-basics",
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Snowflake: Error Handling Framework",
+      "url": "https://cloudyard.in/2021/10/snowflake-error-handling-framework/",
+      "date": "October 14, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Snowflake: ERROR LOGGING during COPY Operation (Source-Target)",
+      "url": "https://cloudyard.in/2021/10/snowflake-error-logging-during-copy-operation-source-target/",
+      "date": "October 11, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "event-tables"
+      ]
+    },
+    {
+      "title": "SYSTEM Function in Snowflake Contd……",
+      "url": "https://cloudyard.in/2021/10/system-function-in-snowflake-contd/",
+      "date": "October 7, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "SYSTEM Function in Snowflake",
+      "url": "https://cloudyard.in/2021/10/system-function-in-snowflake/",
+      "date": "October 7, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowflake : Data Refresh Approach to Pre-Production Environment",
+      "url": "https://cloudyard.in/2021/10/snowflake-data-refresh-approach-to-pre-production-environment/",
+      "date": "October 2, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "environment-strategy"
+      ]
+    },
+    {
+      "title": "Snowflake: GET_DDL from Python",
+      "url": "https://cloudyard.in/2021/09/snowflake-get_ddl-from-python/",
+      "date": "September 30, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "stored-procedures",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Snowflake: RBAC + RLS + CLS Implementation",
+      "url": "https://cloudyard.in/2021/09/snowflake-rbac-rls-cls-implementation/",
+      "date": "September 27, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Stored Procedure: Logging, Looping, Loading, Unloading, Parameters, PROC call",
+      "url": "https://cloudyard.in/2021/09/stored-procedure-logging-looping-loading-unloading-parameters-proc-call/",
+      "date": "September 24, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "stored-procedures",
+        "event-tables",
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Schema Detection Use Case",
+      "url": "https://cloudyard.in/2021/09/schema-detection-use-case/",
+      "date": "September 21, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "infer-schema"
+      ]
+    },
+    {
+      "title": "Schema Detection Overview:",
+      "url": "https://cloudyard.in/2021/09/schema-detection-overview/",
+      "date": "September 21, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "infer-schema",
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Snowflake : Row Access Policies",
+      "url": "https://cloudyard.in/2021/09/snowflake-row-access-policies/",
+      "date": "September 15, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Role Based Access Control in Snowflake",
+      "url": "https://cloudyard.in/2021/09/role-based-access-control-in-snowflake/",
+      "date": "September 8, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Clustering on Materialized Views",
+      "url": "https://cloudyard.in/2021/09/clustering-on-materialized-views/",
+      "date": "September 6, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "materialized-views",
+        "micro-partitions",
+        "pruning-clustering",
+        "views"
+      ]
+    },
+    {
+      "title": "Snowflake: Local and Remote Disk Spilling",
+      "url": "https://cloudyard.in/2021/09/snowflake-local-an-remote-disk-spilling/",
+      "date": "September 2, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "spilling"
+      ]
+    },
+    {
+      "title": "Snowpipe setup in CLONING Database",
+      "url": "https://cloudyard.in/2021/08/snowpipe-setup-in-cloning-database/",
+      "date": "August 28, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "cloning",
+        "time-travel",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "IMPORTED PRIVILEGES on Shared Database",
+      "url": "https://cloudyard.in/2021/08/imported-privileges-on-shared-database/",
+      "date": "August 25, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim",
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Masking Policies in Replication",
+      "url": "https://cloudyard.in/2021/08/masking-policies-in-replication/",
+      "date": "August 22, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Masking Policies conduct during Cloning and Sharing:",
+      "url": "https://cloudyard.in/2021/08/masking-policies-conduct-during-cloning-and-sharing/",
+      "date": "August 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "cloning",
+        "time-travel",
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Snowflake: Dynamic Data Masking",
+      "url": "https://cloudyard.in/2021/08/snowflake-dynamic-data-masking/",
+      "date": "August 16, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking"
+      ]
+    },
+    {
+      "title": "Snowflake : Handling Extra Commas in data via Python",
+      "url": "https://cloudyard.in/2021/08/snowflake-handling-extra-commas-in-data-via-python/",
+      "date": "August 13, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors",
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake: Dynamic View Generation",
+      "url": "https://cloudyard.in/2021/08/snowflake-dynamic-view-generation/",
+      "date": "August 11, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "views"
+      ]
+    },
+    {
+      "title": "Snowflake: SPLIT,SPLIT_PART and FLATTEN",
+      "url": "https://cloudyard.in/2021/08/snowflake-splitsplit_part-and-lateral_flatten-function/",
+      "date": "August 10, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowflake: QUALIFY with Window Function",
+      "url": "https://cloudyard.in/2021/08/snowflake-qualify-with-window-function/",
+      "date": "August 9, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Continuous Data Protection: Multi-Factor Authentication (MFA)",
+      "url": "https://cloudyard.in/2021/07/continuous-data-protection-multi-factor-authentication-mfa/",
+      "date": "July 28, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "Javascript: Load CSV into Table",
+      "url": "https://cloudyard.in/2021/07/javascript-load-csv-into-table/",
+      "date": "July 26, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "stored-procedures",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Access Control: Object Ownership vs Role Ownership",
+      "url": "https://cloudyard.in/2021/07/access-control-object-ownership-vs-role-ownership/",
+      "date": "July 26, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Snowflake Common mistakes: A budget massacre",
+      "url": "https://cloudyard.in/2021/07/snowflake-common-mistakes-a-budget-massacre/",
+      "date": "July 20, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "credit-usage",
+        "storage-cost"
+      ]
+    },
+    {
+      "title": "Salesforce Integration with Snowflake: Data Manager",
+      "url": "https://cloudyard.in/2021/07/salesforce-integration-with-snowflake-data-manager/",
+      "date": "July 13, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "authentication",
+        "sso-oauth"
+      ]
+    },
+    {
+      "title": "Salesforce Integration with Snowflake: Tableau CRM Sync Out Connector…",
+      "url": "https://cloudyard.in/2021/07/salesforce-integration-with-snowflake-tableau-crm-sync-out-connector/",
+      "date": "July 13, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Network Policy: Data Protection",
+      "url": "https://cloudyard.in/2021/07/network-policy-data-protection/",
+      "date": "July 9, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "masking",
+        "tag-based-masking",
+        "encryption",
+        "network-policies"
+      ]
+    },
+    {
+      "title": "Future Grants Management in Snowflake",
+      "url": "https://cloudyard.in/2021/07/future-grants-management-in-snowflake/",
+      "date": "July 6, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Snowflake with OKTA SSO…..",
+      "url": "https://cloudyard.in/2021/07/snowflake-with-okta-sso/",
+      "date": "July 2, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "role-hierarchy",
+        "sso-oauth",
+        "scim"
+      ]
+    },
+    {
+      "title": "Snowflake: Load and Analyze XML file…",
+      "url": "https://cloudyard.in/2021/06/snowflake-load-and-analyze-xml-file/",
+      "date": "June 30, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake : Unload Table to Stage Area",
+      "url": "https://cloudyard.in/2021/06/snowflake-unload-table-to-stage-area/",
+      "date": "June 23, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages"
+      ]
+    },
+    {
+      "title": "Snowflake:Split Huge File via aws s3 cp",
+      "url": "https://cloudyard.in/2021/06/snowflakesplit-huge-file-via-aws-s3-cp/",
+      "date": "June 21, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Snowflake: A Performance tuning tips",
+      "url": "https://cloudyard.in/2021/06/snowflake-a-performance-tuning-tips/",
+      "date": "June 19, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "query-profile",
+        "query-history-analysis"
+      ]
+    },
+    {
+      "title": "Snowflake Parameters Insight Contd…",
+      "url": "https://cloudyard.in/2021/06/snowflake-parameters-insight-contd/",
+      "date": "June 17, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowflake Parameters Insight",
+      "url": "https://cloudyard.in/2021/06/snowflake-parameters-insight/",
+      "date": "June 17, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowflake CSV file: Extra comma in data",
+      "url": "https://cloudyard.in/2021/06/snowflake-csv-file-extra-comma-in-data/",
+      "date": "June 14, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "JSON Methods: load vs loads() and dump vs dumps()",
+      "url": "https://cloudyard.in/2021/06/json-methods-load-vs-loads-and-dump-vs-dumps/",
+      "date": "June 12, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowflake WebUI: Table Creation and Population",
+      "url": "https://cloudyard.in/2021/06/table-creation-and-population/",
+      "date": "June 9, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "JSON Data Update:",
+      "url": "https://cloudyard.in/2021/06/json-data-update/",
+      "date": "June 7, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowflake Parameters Management",
+      "url": "https://cloudyard.in/2021/06/snowflake-parameters-management/",
+      "date": "June 5, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Stored Proc Error Logging: Unload to Stage",
+      "url": "https://cloudyard.in/2021/06/stored-proc-error-logging-unload-to-stage/",
+      "date": "June 3, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "event-tables"
+      ]
+    },
+    {
+      "title": "Data Sharing: Reader Account",
+      "url": "https://cloudyard.in/2021/05/data-sharing-reader-account/",
+      "date": "May 29, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Data Sharing: Consumer Account",
+      "url": "https://cloudyard.in/2021/05/data-sharing-consumer-account/",
+      "date": "May 29, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Error handling in Stored Procedure",
+      "url": "https://cloudyard.in/2021/05/error-handling-in-stored-procedure/",
+      "date": "May 26, 2021",
+      "category": "Snowflake Javascript procedure",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Micro partitions and Pruning in Snowflake",
+      "url": "https://cloudyard.in/2021/05/micro-partitions-and-pruning-in-snowflake/",
+      "date": "May 26, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "micro-partitions",
+        "pruning-clustering"
+      ]
+    },
+    {
+      "title": "Snowpipe Status Troubleshooting Continue…",
+      "url": "https://cloudyard.in/2021/05/snowpipe-status-troubleshooting-continue/",
+      "date": "May 23, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Snowpipe Troubleshooting: Multiple Approaches",
+      "url": "https://cloudyard.in/2021/05/snowpipe-troubleshooting-multiple-approaches/",
+      "date": "May 23, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into",
+        "stages",
+        "snowpipe"
+      ]
+    },
+    {
+      "title": "Storage and Cloud Services Usage:",
+      "url": "https://cloudyard.in/2021/05/storage-and-cloud-services-usage/",
+      "date": "May 20, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "credit-usage",
+        "storage-cost"
+      ]
+    },
+    {
+      "title": "Snowflake Pricing: Warehouse Usage",
+      "url": "https://cloudyard.in/2021/05/snowflake-pricing/",
+      "date": "May 20, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "warehouse-basics"
+      ]
+    },
+    {
+      "title": "SET Variable in Stored Procedure:",
+      "url": "https://cloudyard.in/2021/05/set-variable-in-stored-procedure/",
+      "date": "May 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Caller’s Rights vs Owner’s Rights:",
+      "url": "https://cloudyard.in/2021/05/callers-rights-vs-owners-rights/",
+      "date": "May 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "stored-procedures"
+      ]
+    },
+    {
+      "title": "Automatically Refresh External Tables",
+      "url": "https://cloudyard.in/2021/05/automatically-refresh-external-tables/",
+      "date": "May 14, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "Python to Snowflake:",
+      "url": "https://cloudyard.in/2021/05/python-to-snowflake/",
+      "date": "May 12, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Table Partition:",
+      "url": "https://cloudyard.in/2021/05/table-partition/",
+      "date": "May 9, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "micro-partitions",
+        "pruning-clustering"
+      ]
+    },
+    {
+      "title": "External Table Partition:",
+      "url": "https://cloudyard.in/2021/05/external-table-partition/",
+      "date": "May 9, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "external-tables",
+        "micro-partitions",
+        "pruning-clustering"
+      ]
+    },
+    {
+      "title": "Resource Monitor Usage:",
+      "url": "https://cloudyard.in/2021/05/resource-monitor-usage/",
+      "date": "May 7, 2021",
+      "category": "Snowsql Configure",
+      "topics": [
+        "resource-monitors"
+      ]
+    },
+    {
+      "title": "STRIP_OUTER_ARRAY in JSON:Contd…",
+      "url": "https://cloudyard.in/2021/05/strip_outer_array-in-jsoncontd/",
+      "date": "May 6, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowflake : STRIP_OUTER_ARRAY  in JSON:",
+      "url": "https://cloudyard.in/2021/05/snowflake-strip_outer_array-in-json/",
+      "date": "May 5, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "variant",
+        "flatten"
+      ]
+    },
+    {
+      "title": "Snowflake Unique Features:",
+      "url": "https://cloudyard.in/2021/05/snowflake-unique-features/",
+      "date": "May 4, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Difference between Sequence, Identity, Auto Increment:",
+      "url": "https://cloudyard.in/2021/05/difference-between-sequence-identity-auto-increment/",
+      "date": "May 3, 2021",
+      "category": "Snowsql Configure",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Task Security:",
+      "url": "https://cloudyard.in/2021/05/task-privileges-security/",
+      "date": "May 2, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "File Iteration Using Metadata Objects:",
+      "url": "https://cloudyard.in/2021/05/file-iteration-using-metadata-objects/",
+      "date": "May 1, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "copy-into"
+      ]
+    },
+    {
+      "title": "UDF Functions:",
+      "url": "https://cloudyard.in/2021/04/udf-functions/",
+      "date": "April 28, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "udfs"
+      ]
+    },
+    {
+      "title": "Insert CSV to Snowflake Contd:",
+      "url": "https://cloudyard.in/2021/04/insert-csv-to-snowflake-contd/",
+      "date": "April 25, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Insert CSV to Snowflake Table:",
+      "url": "https://cloudyard.in/2021/04/insert-csv-to-snowflake/",
+      "date": "April 25, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats"
+      ]
+    },
+    {
+      "title": "Spark-Snowflake Integration:",
+      "url": "https://cloudyard.in/2021/04/spark-snowflake-integration/",
+      "date": "April 23, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Zip file process to Snowflake:",
+      "url": "https://cloudyard.in/2021/04/zip-python-to-snowflake/",
+      "date": "April 21, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "unstructured",
+        "directory-tables"
+      ]
+    },
+    {
+      "title": "Salesforce/Python/Snowflake integration:",
+      "url": "https://cloudyard.in/2021/04/salesforce-python-snowflake-integration/",
+      "date": "April 21, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "authentication",
+        "sso-oauth",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Kinesis Firehose and Snowflake Steps:",
+      "url": "https://cloudyard.in/2021/04/kinesis-firehose-technical-steps/",
+      "date": "April 21, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Data Pipeline:Kinesis Firehose and Snowflake",
+      "url": "https://cloudyard.in/2021/04/data-pipeline-using-kinesis-firehose-sf/",
+      "date": "April 21, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "pipeline-design",
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "Pandas DataFrames with Snowflake:",
+      "url": "https://cloudyard.in/2021/04/pandas-dataframes-with-snowflake/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Python Connector",
+      "topics": [
+        "drivers-connectors"
+      ]
+    },
+    {
+      "title": "External Table Steps:",
+      "url": "https://cloudyard.in/2021/04/external-table-technical-implementation/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "An Introduction to External Tables:",
+      "url": "https://cloudyard.in/2021/04/external-tables/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "external-tables"
+      ]
+    },
+    {
+      "title": "TASK Hierarchy Query:",
+      "url": "https://cloudyard.in/2021/04/task-hierarchy-query/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "tasks"
+      ]
+    },
+    {
+      "title": "Dynamic Secure View Scenario:",
+      "url": "https://cloudyard.in/2021/04/dynamic-secure-view-scenario/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "views"
+      ]
+    },
+    {
+      "title": "DATA SHARING:",
+      "url": "https://cloudyard.in/2021/04/data-sharing/",
+      "date": "April 20, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "secure-shares"
+      ]
+    },
+    {
+      "title": "Cloning Scenario:",
+      "url": "https://cloudyard.in/2021/04/cloning-scenario/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "cloning",
+        "time-travel"
+      ]
+    },
+    {
+      "title": "Zero Copy Cloning Overview:",
+      "url": "https://cloudyard.in/2021/04/zero-copy-cloning-2/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cloning",
+        "time-travel",
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Quick look Zero Copy Cloning:",
+      "url": "https://cloudyard.in/2021/04/zero-copy-cloning/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "cloning",
+        "time-travel"
+      ]
+    },
+    {
+      "title": "RBAC Default Role:",
+      "url": "https://cloudyard.in/2021/04/rbac-default-role/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "RBAC Multilevel Hierarchy Scenario:",
+      "url": "https://cloudyard.in/2021/04/rbac-multilevel-hierarchy/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Role Base Access Control (RBAC):",
+      "url": "https://cloudyard.in/2021/04/role-base-access-control-rbac/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Query History:",
+      "url": "https://cloudyard.in/2021/04/queries-to-fetch-query-history/",
+      "date": "April 19, 2021",
+      "category": "Snowsql Configure",
+      "topics": [
+        "query-profile",
+        "query-history-analysis"
+      ]
+    },
+    {
+      "title": "Snowsql : PUT with PARALLEL…",
+      "url": "https://cloudyard.in/2021/04/snowsql-put-with-parallel/",
+      "date": "April 19, 2021",
+      "category": "Snowsql Configure",
+      "topics": [
+        "copy-into",
+        "stages",
+        "file-formats",
+        "snowflake-cli"
+      ]
+    },
+    {
+      "title": "Snowflake Caching Tips:",
+      "url": "https://cloudyard.in/2021/04/snowflake-caching-tips/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "caching"
+      ]
+    },
+    {
+      "title": "Caching types:",
+      "url": "https://cloudyard.in/2021/04/caching-types/",
+      "date": "April 19, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "caching"
+      ]
+    },
+    {
+      "title": "Caching Flow:",
+      "url": "https://cloudyard.in/2021/04/caching-contd/",
+      "date": "April 19, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "caching"
+      ]
+    },
+    {
+      "title": "Caching in Snowflake:",
+      "url": "https://cloudyard.in/2021/04/caching/",
+      "date": "April 19, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "caching"
+      ]
+    },
+    {
+      "title": "Common Table Expressions (CTEs):",
+      "url": "https://cloudyard.in/2021/04/common-table-expressions-ctes/",
+      "date": "April 19, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "When to Create a Materialized View:",
+      "url": "https://cloudyard.in/2021/04/when-to-create-a-materialized-view/",
+      "date": "April 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "materialized-views"
+      ]
+    },
+    {
+      "title": "Materialized View:",
+      "url": "https://cloudyard.in/2021/04/materialized-view/",
+      "date": "April 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "materialized-views"
+      ]
+    },
+    {
+      "title": "Snowflake: PIVOT and UNPIVOT",
+      "url": "https://cloudyard.in/2021/04/snowflake-pivot-and-unpivot/",
+      "date": "April 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowflake: Data Architecture",
+      "url": "https://cloudyard.in/2021/04/snowflake-data-architecture/",
+      "date": "April 18, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "medallion-architecture",
+        "architecture"
+      ]
+    },
+    {
+      "title": "Snowflake Reference Architecture :",
+      "url": "https://cloudyard.in/2021/04/reference-architecture-for-dw-built-on-top-of-snowflake/",
+      "date": "April 18, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "medallion-architecture",
+        "architecture"
+      ]
+    },
+    {
+      "title": "Sampling:",
+      "url": "https://cloudyard.in/2021/04/sampling/",
+      "date": "April 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Clustering Tips:",
+      "url": "https://cloudyard.in/2021/04/clustering-tips/",
+      "date": "April 18, 2021",
+      "category": "Discussion Forum",
+      "topics": [
+        "micro-partitions",
+        "pruning-clustering"
+      ]
+    },
+    {
+      "title": "SQL compilation error: Unsupported subquery type.",
+      "url": "https://cloudyard.in/2021/04/sql-compilation-error-unsupported-subquery-type-cannot-be-evaluated/",
+      "date": "April 18, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "snowflake-sql-extensions",
+        "sql-basics"
+      ]
+    },
+    {
+      "title": "Snowsql Configuration:",
+      "url": "https://cloudyard.in/2021/04/snowsql-config-file/",
+      "date": "April 17, 2021",
+      "category": "Snowsql Configure",
+      "topics": [
+        "snowflake-cli"
+      ]
+    },
+    {
+      "title": "Role Hierarchy:",
+      "url": "https://cloudyard.in/2021/04/role-hierarchy/",
+      "date": "April 17, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "role-hierarchy"
+      ]
+    },
+    {
+      "title": "Performance Tuning:",
+      "url": "https://cloudyard.in/2021/04/performance-tuning/",
+      "date": "April 17, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "query-profile",
+        "query-history-analysis"
+      ]
+    },
+    {
+      "title": "Snowflake Overview",
+      "url": "https://cloudyard.in/2021/04/snowflake-overview/",
+      "date": "April 17, 2021",
+      "category": "Snowflake Admin",
+      "topics": [
+        "what-is-snowflake",
+        "snowsight"
+      ]
+    },
+    {
+      "title": "Spark-Snowflake Technical Implementation:",
+      "url": "https://cloudyard.in/2021/04/spark-snowflake-technical-implementation/",
+      "date": "April 17, 2021",
+      "category": "Snowflake Scenario",
+      "topics": [
+        "drivers-connectors"
+      ]
+    }
+  ]
+}

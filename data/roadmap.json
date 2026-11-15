@@ -1,0 +1,1639 @@
+{
+  "id": "snowflake",
+  "title": "Snowflake Roadmap",
+  "description": "Step-by-step guide from Snowflake fundamentals to senior platform architecture, administration and data engineering.",
+  "sections": [
+    {
+      "id": "foundations",
+      "title": "Snowflake Fundamentals",
+      "groups": [
+        {
+          "title": "Platform Basics",
+          "topics": [
+            {
+              "id": "what-is-snowflake",
+              "title": "What is Snowflake?",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "architecture",
+              "title": "Three-Layer Architecture",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "editions",
+              "title": "Snowflake Editions",
+              "type": "recommended",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "cloud-regions",
+              "title": "Cloud Platforms & Regions",
+              "type": "optional",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Storage Internals",
+          "topics": [
+            {
+              "id": "micro-partitions",
+              "title": "Micro-partitions",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "metadata-services",
+              "title": "Metadata & Cloud Services",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "SQL",
+          "topics": [
+            {
+              "id": "sql-basics",
+              "title": "SQL Essentials",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "snowflake-sql-extensions",
+              "title": "Snowflake SQL Extensions",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "groups": [
+        {
+          "title": "Interfaces",
+          "topics": [
+            {
+              "id": "trial-account",
+              "title": "Create a Trial Account",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "snowsight",
+              "title": "Snowsight (Web UI)",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "snowflake-cli",
+              "title": "Snowflake CLI",
+              "type": "recommended",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "drivers-connectors",
+              "title": "Drivers & Connectors",
+              "type": "optional",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Objects",
+          "topics": [
+            {
+              "id": "object-hierarchy",
+              "title": "Object Hierarchy",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "table-types",
+              "title": "Table Types",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "views",
+              "title": "Views",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "data-types",
+              "title": "Data Types",
+              "type": "recommended",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "title": "Compute & Warehouses",
+      "groups": [
+        {
+          "title": "Virtual Warehouses",
+          "topics": [
+            {
+              "id": "warehouse-basics",
+              "title": "Warehouse Sizing",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin",
+                "engineer"
+              ]
+            },
+            {
+              "id": "auto-suspend",
+              "title": "Auto-suspend & Auto-resume",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "multi-cluster",
+              "title": "Multi-cluster Warehouses",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "snowpark-optimized",
+              "title": "Snowpark-optimized Warehouses",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "gen2-warehouses",
+              "title": "Gen2 Standard Warehouses",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Serverless Compute",
+          "topics": [
+            {
+              "id": "serverless-compute",
+              "title": "Serverless Features",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "qas",
+              "title": "Query Acceleration Service",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guardrails",
+          "topics": [
+            {
+              "id": "resource-monitors",
+              "title": "Resource Monitors",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "timeouts-queuing",
+              "title": "Timeouts & Queuing",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "workload-isolation",
+              "title": "Workload Isolation Strategy",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ingestion",
+      "title": "Data Ingestion",
+      "groups": [
+        {
+          "title": "Staging",
+          "topics": [
+            {
+              "id": "stages",
+              "title": "Stages",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "file-formats",
+              "title": "File Formats",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "storage-integrations",
+              "title": "Storage Integrations",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Batch Loading",
+          "topics": [
+            {
+              "id": "copy-into",
+              "title": "COPY INTO",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "infer-schema",
+              "title": "Schema Detection & Evolution",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer"
+              ]
+            },
+            {
+              "id": "unloading",
+              "title": "Unloading Data",
+              "type": "recommended",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "loading-best-practices",
+              "title": "Bulk Loading at Scale",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Continuous Loading",
+          "topics": [
+            {
+              "id": "snowpipe",
+              "title": "Snowpipe",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "snowpipe-streaming",
+              "title": "Snowpipe Streaming",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "kafka-connector",
+              "title": "Kafka Connector",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "openflow",
+              "title": "Openflow",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semi-structured",
+      "title": "Semi-structured & Unstructured Data",
+      "groups": [
+        {
+          "title": "Semi-structured",
+          "topics": [
+            {
+              "id": "variant",
+              "title": "VARIANT, OBJECT, ARRAY",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "flatten",
+              "title": "FLATTEN & LATERAL",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "semi-structured-performance",
+              "title": "Semi-structured Performance",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Unstructured",
+          "topics": [
+            {
+              "id": "unstructured",
+              "title": "Unstructured Data",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "directory-tables",
+              "title": "Directory Tables",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pipelines",
+      "title": "Pipelines & Transformation",
+      "groups": [
+        {
+          "title": "Change Processing",
+          "topics": [
+            {
+              "id": "streams",
+              "title": "Streams (CDC)",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "tasks",
+              "title": "Tasks & Task Graphs",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "dynamic-tables",
+              "title": "Dynamic Tables",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "pipeline-design",
+              "title": "Pipeline Design Patterns",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Programmability",
+          "topics": [
+            {
+              "id": "stored-procedures",
+              "title": "Stored Procedures",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "udfs",
+              "title": "User-Defined Functions",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "snowpark",
+              "title": "Snowpark",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "external-access",
+              "title": "External Network Access",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tools",
+          "topics": [
+            {
+              "id": "dbt",
+              "title": "dbt with Snowflake",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "groups": [
+        {
+          "title": "Authentication",
+          "topics": [
+            {
+              "id": "authentication",
+              "title": "Passwords & MFA",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "key-pair-auth",
+              "title": "Key-pair Authentication",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "sso-oauth",
+              "title": "SSO (SAML) & OAuth",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "scim",
+              "title": "SCIM Provisioning",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin"
+              ]
+            },
+            {
+              "id": "auth-policies",
+              "title": "Authentication Policies",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Authorization",
+          "topics": [
+            {
+              "id": "system-roles",
+              "title": "System-defined Roles",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "role-hierarchy",
+              "title": "Role Hierarchy Design",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "future-grants",
+              "title": "Privileges & Future Grants",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "database-roles",
+              "title": "Database Roles",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "managed-access",
+              "title": "Managed Access Schemas",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "secondary-roles",
+              "title": "Secondary Roles",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Network & Encryption",
+          "topics": [
+            {
+              "id": "network-policies",
+              "title": "Network Policies & Rules",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "private-connectivity",
+              "title": "Private Connectivity",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "encryption",
+              "title": "Encryption & Tri-Secret Secure",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Data Governance",
+      "groups": [
+        {
+          "title": "Policies",
+          "topics": [
+            {
+              "id": "masking",
+              "title": "Dynamic Data Masking",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "engineer"
+              ]
+            },
+            {
+              "id": "row-access",
+              "title": "Row Access Policies",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "engineer"
+              ]
+            },
+            {
+              "id": "tag-based-masking",
+              "title": "Tag-based Masking",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "privacy-policies",
+              "title": "Aggregation & Projection Policies",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Metadata & Audit",
+          "topics": [
+            {
+              "id": "tagging",
+              "title": "Object Tagging",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "classification",
+              "title": "Data Classification",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "admin"
+              ]
+            },
+            {
+              "id": "access-history",
+              "title": "Access History & Lineage",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Quality & Posture",
+          "topics": [
+            {
+              "id": "data-metric-functions",
+              "title": "Data Metric Functions",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "trust-center",
+              "title": "Trust Center",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protection",
+      "title": "Data Protection & Business Continuity",
+      "groups": [
+        {
+          "title": "Recovery",
+          "topics": [
+            {
+              "id": "time-travel",
+              "title": "Time Travel",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "fail-safe",
+              "title": "Fail-safe",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "undrop",
+              "title": "UNDROP",
+              "type": "recommended",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "cloning",
+              "title": "Zero-copy Cloning",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Replication & DR",
+          "topics": [
+            {
+              "id": "replication",
+              "title": "Replication Groups",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "failover",
+              "title": "Failover Groups",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "client-redirect",
+              "title": "Client Redirect",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "dr-strategy",
+              "title": "BCDR Strategy & Testing",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "Performance Tuning",
+      "groups": [
+        {
+          "title": "Diagnose",
+          "topics": [
+            {
+              "id": "query-profile",
+              "title": "Query Profile",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            },
+            {
+              "id": "query-history-analysis",
+              "title": "Workload Analysis",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Data Layout",
+          "topics": [
+            {
+              "id": "pruning-clustering",
+              "title": "Pruning & Clustering Keys",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "search-optimization",
+              "title": "Search Optimization Service",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "materialized-views",
+              "title": "Materialized Views",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Execution",
+          "topics": [
+            {
+              "id": "caching",
+              "title": "Caching Layers",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "spilling",
+              "title": "Spilling & Right-sizing",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "query-anti-patterns",
+              "title": "Query Anti-patterns",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitoring-cost",
+      "title": "Monitoring & FinOps",
+      "groups": [
+        {
+          "title": "Observability",
+          "topics": [
+            {
+              "id": "account-usage",
+              "title": "ACCOUNT_USAGE Views",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "information-schema",
+              "title": "INFORMATION_SCHEMA",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "alerts",
+              "title": "Alerts & Notifications",
+              "type": "optional",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            },
+            {
+              "id": "event-tables",
+              "title": "Logging & Tracing",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "admin"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Cost Management",
+          "topics": [
+            {
+              "id": "credit-usage",
+              "title": "Understanding Costs",
+              "type": "required",
+              "level": "beginner",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "budgets",
+              "title": "Budgets",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "cost-attribution",
+              "title": "Cost Attribution",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "storage-cost",
+              "title": "Storage Cost Optimization",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin"
+              ]
+            },
+            {
+              "id": "finops-practice",
+              "title": "FinOps Operating Model",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing",
+      "title": "Data Sharing & Collaboration",
+      "groups": [
+        {
+          "title": "Sharing",
+          "topics": [
+            {
+              "id": "secure-shares",
+              "title": "Secure Data Sharing",
+              "type": "required",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "reader-accounts",
+              "title": "Reader Accounts",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "admin"
+              ]
+            },
+            {
+              "id": "listings",
+              "title": "Listings & Marketplace",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Collaboration",
+          "topics": [
+            {
+              "id": "clean-rooms",
+              "title": "Data Clean Rooms",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "architect"
+              ]
+            },
+            {
+              "id": "native-apps",
+              "title": "Native App Framework",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lakehouse",
+      "title": "Open Formats & Lakehouse",
+      "groups": [
+        {
+          "title": "Apache Iceberg",
+          "topics": [
+            {
+              "id": "iceberg-tables",
+              "title": "Apache Iceberg Tables",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "external-volumes",
+              "title": "External Volumes",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "catalog-integrations",
+              "title": "Catalog Integrations",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "External Data",
+          "topics": [
+            {
+              "id": "external-tables",
+              "title": "External Tables",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core",
+                "engineer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-apps",
+      "title": "AI, ML & Apps",
+      "groups": [
+        {
+          "title": "Cortex AI",
+          "topics": [
+            {
+              "id": "cortex-ai-functions",
+              "title": "Cortex AI Functions",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "cortex-search",
+              "title": "Cortex Search",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "cortex-analyst",
+              "title": "Cortex Analyst & Semantic Views",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "cortex-agents",
+              "title": "Cortex Agents",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ML & Apps",
+          "topics": [
+            {
+              "id": "snowflake-ml",
+              "title": "Snowflake ML",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "streamlit",
+              "title": "Streamlit in Snowflake",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "spcs",
+              "title": "Snowpark Container Services",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps & Automation",
+      "groups": [
+        {
+          "title": "Infrastructure as Code",
+          "topics": [
+            {
+              "id": "terraform",
+              "title": "Terraform Provider",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "schema-change",
+              "title": "Schema Change Management",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Delivery",
+          "topics": [
+            {
+              "id": "git-integration",
+              "title": "Git Integration",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "ci-cd",
+              "title": "CI/CD Pipelines",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "environment-strategy",
+              "title": "Environment Strategy",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-patterns",
+      "title": "Advanced Architecture",
+      "groups": [
+        {
+          "title": "Organization Design",
+          "topics": [
+            {
+              "id": "multi-account-strategy",
+              "title": "Multi-account Strategy",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            },
+            {
+              "id": "platform-rbac-framework",
+              "title": "Enterprise RBAC Framework",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "admin",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Data Architecture",
+          "topics": [
+            {
+              "id": "medallion-architecture",
+              "title": "Layered (Medallion) Architecture",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "data-mesh",
+              "title": "Data Mesh on Snowflake",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "hybrid-tables",
+              "title": "Hybrid Tables (Unistore)",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Migration",
+          "topics": [
+            {
+              "id": "migration-strategy",
+              "title": "Migrating to Snowflake",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "certification",
+      "title": "Certification",
+      "groups": [
+        {
+          "title": "SnowPro",
+          "topics": [
+            {
+              "id": "snowpro-core",
+              "title": "SnowPro Core",
+              "type": "recommended",
+              "level": "intermediate",
+              "tracks": [
+                "core"
+              ]
+            },
+            {
+              "id": "snowpro-advanced",
+              "title": "SnowPro Advanced",
+              "type": "optional",
+              "level": "advanced",
+              "tracks": [
+                "architect"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "core",
+      "title": "SnowPro Core",
+      "badge": "🎯",
+      "description": "Essential topics tested on the SnowPro Core certification"
+    },
+    {
+      "id": "engineer",
+      "title": "Data Engineer",
+      "badge": "⚙️",
+      "description": "Ingestion, pipelines, semi-structured data, Streams, Tasks, Dynamic Tables, and Snowpark"
+    },
+    {
+      "id": "admin",
+      "title": "Administrator & FinOps",
+      "badge": "🛡️",
+      "description": "Security, RBAC, governance, FinOps, monitoring, and business continuity"
+    },
+    {
+      "id": "architect",
+      "title": "Platform Architect",
+      "badge": "🏛️",
+      "description": "Enterprise design, multi-account, data mesh, lakehouse, hybrid tables, and AI"
+    }
+  ]
+}
