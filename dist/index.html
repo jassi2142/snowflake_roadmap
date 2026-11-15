@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="snowflake-source" content="cortex-agent-authored" />
   <title>Snowflake Roadmap</title>
   <script type="application/json" id="snowflake-report-metadata">
@@ -122,10 +122,48 @@
 
     @media (max-width: 760px) {
       #roadmap::before { left: 16px; }
-      .row { grid-template-columns: 1fr; gap: 10px; padding-left: 30px; }
+      .row { grid-template-columns: 1fr; gap: 10px; padding-left: 30px; margin-bottom: 32px; }
       .section, .row.l .box, .row.r .box { grid-column: 1; grid-row: auto; }
+      .section::before { content: ""; position: absolute; left: -26px; top: 50%; width: 26px; border-top: 2px dashed var(--line); }
       .box::after { display: none; }
       .start, .end { margin-left: 0; }
+
+      /* Mobile full-width controls & spacing */
+      .toolbar { gap: 10px; }
+      .progress { flex: 1 1 100%; width: 100%; }
+      .toolbar input { flex: 1 1 100%; width: 100%; }
+      .levels { width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+      .levels button { text-align: center; padding: 8px 6px; font-size: .85rem; }
+      #filter-starred { width: 100%; padding: 8px 12px; text-align: center; }
+      .tool-actions { width: 100%; display: flex; gap: 6px; }
+      .tool-actions button { flex: 1 1 0; text-align: center; padding: 8px 4px; font-size: .82rem; }
+
+      /* Touch targets & typography for mobile */
+      .tabs { gap: 4px; }
+      .tabs button { padding: 8px 10px; font-size: .82rem; }
+      .track-buttons { gap: 4px; }
+      .track-buttons button { padding: 6px 10px; font-size: .78rem; }
+      .topic { padding: 8px 10px 8px 26px; font-size: .88rem; min-height: 40px; }
+      .q .opts button { padding: 10px 12px; font-size: .88rem; border-radius: 8px; }
+
+      /* Side drawer on mobile */
+      .panel { padding: 16px; padding-bottom: max(32px, env(safe-area-inset-bottom, 32px)); }
+      .status-btns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+      .status-btns button { text-align: center; padding: 8px 4px; font-size: .8rem; }
+      #star-btn { grid-column: 1 / -1; }
+
+      /* Practice Exam view on mobile */
+      .exam-card { padding: 16px; margin: 12px auto 24px; border-radius: 8px; }
+      .domain-bar { width: 45px; }
+      .result-domain-table th, .result-domain-table td { padding: 6px 4px; font-size: 0.8rem; }
+      .exam-options .exam-opt { padding: 10px 12px; }
+      .exam-nav { flex-direction: column; gap: 10px; align-items: stretch; }
+      .exam-nav button { width: 100%; padding: 10px; text-align: center; }
+      .exam-nav span { text-align: center; }
+
+      /* Library & search bars on mobile */
+      .lib-bar { flex-direction: column; align-items: stretch; }
+      .lib-bar input, .lib-bar select { width: 100%; flex: 1 1 100%; }
     }
 
     /* Side panel */
@@ -133,11 +171,15 @@
     .overlay.open { opacity: 1; pointer-events: auto; }
     .panel { position: fixed; top: 0; right: 0; height: 100%; width: min(680px, 100%); background: var(--panel-bg); z-index: 11;
       transform: translateX(100%); transition: transform .25s; overflow-y: auto; padding: clamp(16px, 4vw, 28px);
+      padding-bottom: max(32px, env(safe-area-inset-bottom, 32px));
       box-shadow: -4px 0 24px rgba(0,0,0,.2); }
     .panel.open { transform: none; }
-    .panel-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 8px;
-      position: sticky; top: calc(-1 * clamp(16px, 4vw, 28px)); background: var(--panel-bg); padding: 8px 0; z-index: 1; }
-    .status-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+    .panel-head { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;
+      position: sticky; top: calc(-1 * clamp(16px, 4vw, 28px)); background: var(--panel-bg); padding: 8px 0; z-index: 1; border-bottom: 1px solid var(--skip-bg); }
+    .panel-top-bar { display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 8px; }
+    .panel-tags { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; flex: 1 1 auto; }
+    #close { font-size: 1.5rem; line-height: 1; width: 36px; height: 36px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; flex-shrink: 0; background: var(--code-bg); border: 1px solid var(--border); }
+    .status-btns { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
     .badge { display: inline-block; font-size: .75rem; padding: 2px 8px; border-radius: 999px; color: #fff; text-transform: capitalize; margin-right: 4px; }
     .badge.required { background: var(--req); } .badge.recommended { background: var(--rec); } .badge.optional { background: var(--opt); }
     .badge.level { background: var(--accent); }
@@ -377,14 +419,16 @@
   <div class="overlay" id="overlay"></div>
   <aside class="panel" id="panel" aria-hidden="true">
     <div class="panel-head">
-      <div><span class="badge" id="ptype"></span><span class="badge level" id="plevel"></span><span id="ptracks"></span></div>
+      <div class="panel-top-bar">
+        <div class="panel-tags"><span class="badge" id="ptype"></span><span class="badge level" id="plevel"></span><span id="ptracks"></span></div>
+        <button type="button" id="close" aria-label="Close panel" title="Close">&times;</button>
+      </div>
       <div class="status-btns" id="sbtns">
         <button type="button" id="star-btn" title="Bookmark topic">☆ Bookmark</button>
         <button type="button" data-s="done">Done</button>
         <button type="button" data-s="progress">In progress</button>
         <button type="button" data-s="skip">Skip</button>
         <button type="button" data-s="">Reset</button>
-        <button type="button" id="close" aria-label="Close">&times;</button>
       </div>
     </div>
     <div class="md" id="pbody"></div>
@@ -628,6 +672,7 @@
       lastFocus = lastFocus || document.activeElement;
       panel.scrollTop = 0;
       panel.classList.add('open'); overlay.classList.add('open'); panel.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
       document.getElementById('close').focus();
     }
     function articleItem(a) {
@@ -684,6 +729,7 @@
     }
     function closePanel() {
       panel.classList.remove('open'); overlay.classList.remove('open'); panel.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
       if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus();
       lastFocus = null;
     }
@@ -1065,10 +1111,12 @@
           <p style="margin:0;color:var(--muted)">You scored ${correct} out of ${total} questions correctly.</p>
         </div>
         <h3 style="margin-bottom:12px">Domain & Section Breakdown</h3>
-        <table class="result-domain-table">
-          <thead><tr><th>Domain / Section</th><th>Score</th><th>Performance</th></tr></thead>
-          <tbody>${domainRows}</tbody>
-        </table>
+        <div class="table-wrap">
+          <table class="result-domain-table">
+            <thead><tr><th>Domain / Section</th><th>Score</th><th>Performance</th></tr></thead>
+            <tbody>${domainRows}</tbody>
+          </table>
+        </div>
         <div class="result-actions">
           <button id="exam-review-btn" type="button" class="btn-primary">Review All Answers</button>
           <button id="exam-restart-btn" type="button">Take Another Exam</button>
