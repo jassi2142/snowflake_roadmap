@@ -1396,6 +1396,16 @@
                 "engineer",
                 "architect"
               ]
+            },
+            {
+              "id": "ai-gateway",
+              "title": "AI Gateway & Model Context Protocol (MCP)",
+              "type": "recommended",
+              "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
             }
           ]
         },
@@ -1407,6 +1417,16 @@
               "title": "Snowflake ML",
               "type": "optional",
               "level": "advanced",
+              "tracks": [
+                "engineer",
+                "architect"
+              ]
+            },
+            {
+              "id": "snowflake-notebooks",
+              "title": "Snowflake Notebooks & Workspaces",
+              "type": "recommended",
+              "level": "intermediate",
               "tracks": [
                 "engineer",
                 "architect"

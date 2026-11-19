@@ -1,92 +1,129 @@
 # Openflow
 
-Snowflake Openflow is a managed data integration service, built on Apache NiFi, that moves data from many kinds of sources to Snowflake and other destinations. It covers structured and unstructured data in batch and streaming modes, and it is Snowflake's answer to the question of how to run connectors (databases with CDC, SaaS apps, Kafka, file and document stores) without operating a separate integration platform.
+Snowflake Openflow is a fully managed data integration and streaming ingestion service built on Apache NiFi. It captures, routes, transforms, and loads structured and unstructured data from hundreds of enterprise sources—including relational databases via Change Data Capture (CDC), SaaS applications, Kafka event streams, and cloud document repositories—into Snowflake tables, Apache Iceberg tables, and downstream Dynamic Tables without requiring a separate third-party ETL/ELT platform.
 
 ## How it works
 
-Openflow separates a Snowflake-managed **control plane** from the **data plane** where flows actually execute. The core objects are:
+Openflow separates a Snowflake-managed **control plane** from an isolated, secure **data plane** where flows actually execute.
 
-- **Deployment**: the infrastructure that hosts runtimes. There are two deployment types:
-  - **Openflow - Snowflake Deployment**, which runs on Snowpark Container Services (SPCS) using a compute pool, integrated with Snowflake's security model. Available in AWS, Azure, and GCP commercial regions.
-  - **Bring Your Own Cloud (BYOC)**, where the data plane runs in your own VPC as a managed Kubernetes cluster while Snowflake runs the control plane. Available in AWS commercial regions. BYOC suits cases where sensitive data must be preprocessed inside your network or private sources are reachable only from your VPC.
-- **Runtime**: a cluster of NiFi runtime servers inside a deployment that runs flow definitions. Teams typically create several runtimes to isolate projects, teams, or SDLC stages.
-- **Connector**: a packaged flow for a specific source, installed from the connector catalog. You can also build custom flows from NiFi processors and controller services.
+### 1. Architecture & Deployment Models
 
-**Generations.** Openflow has gen 1 and gen 2 resources. Every new deployment is gen 2; new gen 1 deployments can no longer be created. In gen 2, deployments, runtimes, and connectors are first-class Snowflake objects managed with SQL (`CREATE OPENFLOW DEPLOYMENT`, `CREATE OPENFLOW RUNTIME ... IN DEPLOYMENT`, `CREATE OPENFLOW CONNECTOR`), runtimes and connectors are schema-scoped, and connector configuration is versioned so it can be promoted through CI/CD. Gen 2 deployment and runtime objects are generally available, while gen 2 connector configuration is in public preview. Each account supports up to three Snowflake (SPCS) Openflow deployments, shared across generations.
+- **Deployment**: The underlying compute infrastructure hosting flow runtimes:
+  - **Snowflake Deployment (SPCS)**: Runtimes execute inside Snowpark Container Services compute pools managed within Snowflake's security perimeter. Fully available across AWS, Azure, and GCP commercial regions.
+  - **Bring Your Own Cloud (BYOC)**: The data plane runs inside the customer's private VPC (managed Kubernetes cluster) while Snowflake orchestrates the control plane. Designed for stringent data sovereignty, zero-egress policies, or on-premises networks reachable only via private VPC peering.
+- **Data Connectivity Proxy**: A lightweight, outbound-only reverse proxy agent deployed in private data centers or on-premises networks. It connects internal databases (such as Oracle, Microsoft SQL Server, PostgreSQL, and MySQL) securely to Openflow runtimes over TLS without opening inbound firewall ports or configuring complex VPNs.
+- **Runtimes & Flow Canvas**: A runtime is a scalable NiFi processing engine. In Snowsight, data engineers use an interactive visual flow canvas to configure FlowFiles, processor groups, transformations, and backpressure queue thresholds.
+- **Connector Catalog**: Pre-packaged, zero-maintenance connectors for common enterprise sources (PostgreSQL CDC, Oracle CDC, MySQL CDC, SQL Server CDC, Salesforce, ServiceNow, Kafka, S3, Google Drive, SharePoint).
 
-**Security and identity.** The recommended authentication is **Snowflake Managed Token**: SPCS session tokens in Snowflake deployments, and workload identity federation in BYOC. A runtime's **execute-as role** determines what its connectors can read and write. Admin privileges include `CREATE OPENFLOW DEPLOYMENT` on the account and `CREATE OPENFLOW RUNTIME` and `CREATE OPENFLOW CONNECTOR` on a schema. Openflow users need `DEFAULT_SECONDARY_ROLES = ('ALL')`, and Openflow cannot be used while ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, or SECURITYADMIN is the active role.
+### 2. Gen 2 First-Class SQL Architecture
 
-**Cost.** Snowflake deployments incur compute charges based on uptime and usage of the compute pool. BYOC deployments incur cloud infrastructure, compute, and storage costs in your account. Because gen 2 runtimes are SQL objects, you can script suspend and resume to reduce cost during idle hours.
+Openflow Gen 2 organizes all resources as native, schema-scoped Snowflake objects governed by standard Role-Based Access Control (RBAC):
+- `CREATE OPENFLOW DEPLOYMENT` (Account-level object)
+- `CREATE OPENFLOW RUNTIME ... IN DEPLOYMENT` (Schema-scoped object)
+- `CREATE OPENFLOW CONNECTOR` (Schema-scoped object with declarative, versioned JSON configuration)
+
+Gen 2 connector configurations can be managed as versioned code artifacts, stored in Git repositories, and promoted across environments using CI/CD pipelines.
+
+### 3. CDC Ingestion into Dynamic Tables & Iceberg
+
+Openflow captures insert, update, and delete operations from transactional database transaction logs in near real-time:
+1. Openflow streams raw CDC records into a Bronze/landing table (including change metadata such as operation type and source commit timestamps).
+2. A downstream **Dynamic Table** consumes the raw landing table with a target lag (e.g. `TARGET_LAG = '1 MINUTE'`), automatically handling deduplication, merges, and state reconstruction for analytics-ready Silver and Gold layers.
+3. Openflow natively supports landing data directly into **Apache Iceberg tables** stored on external cloud storage (Amazon S3, Azure Blob, or Google Cloud Storage) backed by Snowflake Polaris or internal catalogs.
+
+### 4. Security, Identity & Costs
+
+- **Authentication**: Runtimes authenticate via **Snowflake Managed Tokens** (SPCS session tokens in Snowflake deployments; workload identity federation in BYOC), eliminating hard-coded credentials.
+- **Execute-As Role**: Connectors inherit an `EXECUTE AS` role defining granular read/write privileges on target databases, schemas, and warehouses.
+- **Secondary Roles**: Users must have `DEFAULT_SECONDARY_ROLES = ('ALL')`. Openflow cannot be operated while `ACCOUNTADMIN`, `ORGADMIN`, or `SECURITYADMIN` is active.
+- **Cost Management**: Snowflake deployments consume credits based on the SPCS compute pool instance family and uptime. Runtimes can be suspended (`ALTER OPENFLOW RUNTIME ... SUSPEND`) and resumed programmatically to save credits during off-peak hours.
 
 ## Example
 
-Grant gen 2 admin privileges and enable secondary roles for an Openflow user.
+### Configuring a Gen 2 Deployment and Runtime
 
 ```sql
-USE ROLE ACCOUNTADMIN;
+USE ROLE openflow_admin;
 
-GRANT CREATE OPENFLOW DEPLOYMENT ON ACCOUNT TO ROLE openflow_admin;
-GRANT CREATE DATABASE ON ACCOUNT TO ROLE openflow_admin;
+-- 1. Create a schema-scoped Gen 2 Runtime in an existing deployment
+CREATE OPENFLOW RUNTIME cdc_db.ingestion.postgres_cdc_runtime
+  IN DEPLOYMENT prod_openflow_deployment
+  EXECUTE AS ROLE cdc_ingest_role
+  COMMENT = 'High-throughput CDC runtime for production transactional DB';
 
-CREATE DATABASE IF NOT EXISTS openflow_db;
-CREATE SCHEMA IF NOT EXISTS openflow_db.ops;
-GRANT OWNERSHIP ON DATABASE openflow_db TO ROLE openflow_admin COPY CURRENT GRANTS;
-GRANT OWNERSHIP ON SCHEMA openflow_db.ops TO ROLE openflow_admin COPY CURRENT GRANTS;
+-- 2. Verify runtime health and readiness
+SHOW OPENFLOW RUNTIMES IN SCHEMA cdc_db.ingestion;
 
-ALTER USER jdoe SET DEFAULT_SECONDARY_ROLES = ('ALL');
+-- 3. Pair Openflow Bronze landing with an automated Dynamic Table
+CREATE OR REPLACE DYNAMIC TABLE cdc_db.silver.customers_curated
+  TARGET_LAG = '2 MINUTES'
+  WAREHOUSE = transform_wh
+AS
+  SELECT
+    payload:id::INT          AS customer_id,
+    payload:name::STRING     AS full_name,
+    payload:email::STRING    AS email_address,
+    payload:updated_at::TIMESTAMP_NTZ AS last_modified
+  FROM cdc_db.ingestion.raw_customers_cdc
+  QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY payload:id
+    ORDER BY payload:updated_at DESC
+  ) = 1;
 ```
 
-Decommission a gen 2 runtime safely, draining in-flight data before dropping it.
+### Safely Draining and Decommissioning a Runtime
 
 ```sql
-ALTER OPENFLOW RUNTIME openflow_db.ops.cdc_runtime SUSPEND;
-SELECT SYSTEM$WAIT_FOR_STABLE_OPENFLOW_RUNTIMES(600, 'openflow_db.ops.cdc_runtime');
+-- Suspend runtime and wait for in-flight flow queues to drain
+ALTER OPENFLOW RUNTIME cdc_db.ingestion.postgres_cdc_runtime SUSPEND;
+SELECT SYSTEM$WAIT_FOR_STABLE_OPENFLOW_RUNTIMES(600, 'cdc_db.ingestion.postgres_cdc_runtime');
 
-ALTER OPENFLOW RUNTIME openflow_db.ops.cdc_runtime TERMINATE;
-SELECT SYSTEM$WAIT_FOR_STABLE_OPENFLOW_RUNTIMES(600, 'openflow_db.ops.cdc_runtime');
-
-DROP OPENFLOW RUNTIME openflow_db.ops.cdc_runtime;
+-- Terminate and remove
+ALTER OPENFLOW RUNTIME cdc_db.ingestion.postgres_cdc_runtime TERMINATE;
+SELECT SYSTEM$WAIT_FOR_STABLE_OPENFLOW_RUNTIMES(600, 'cdc_db.ingestion.postgres_cdc_runtime');
+DROP OPENFLOW RUNTIME cdc_db.ingestion.postgres_cdc_runtime;
 ```
 
 ## Best practices
 
-- Default to a Snowflake (SPCS) deployment; choose BYOC when data residency, private network reachability, or local preprocessing requires it.
-- Separate runtimes per domain or environment so a noisy or failing flow cannot starve others.
-- Give each runtime a least-privilege execute-as role scoped to the target databases and schemas.
-- Prefer Snowflake Managed Token over key pairs to avoid long-lived credentials.
-- Manage gen 2 connector configuration as versioned artifacts and promote it through Git-based workflows.
-- Stop connectors before suspending or removing runtimes, and use `TERMINATE` (not `TERMINATE FORCE`) unless data loss is acceptable.
+- Use the **Data Connectivity Proxy** when capturing CDC data from on-premises databases to avoid opening public inbound firewall ports.
+- Separate runtimes per business domain or environment (Dev, Test, Prod) so heavy streaming pipelines do not impact critical operational connectors.
+- Stream CDC data into raw append-only landing tables, and let Dynamic Tables handle state merging and SCD2 logic.
+- Manage connector configuration files in Git repositories and deploy them via the Snowflake CLI or Python APIs.
+- Monitor backpressure thresholds and queue depth in the Snowsight Openflow canvas to identify slow downstream merges before queues fill.
 
 ## Common pitfalls
 
-- Trying to use Openflow with ACCOUNTADMIN as the active role, which produces consent errors.
-- Forgetting `DEFAULT_SECONDARY_ROLES`, so users cannot see or act on resources they were granted.
-- Transferring ownership of gen 2 deployments, runtimes, or connectors; the docs currently warn this can break functionality.
-- Assuming `USAGE` on a gen 2 deployment grants access to its runtimes; runtime privileges must be granted directly.
-- Expecting Openflow in a trial account without contacting the account team.
+- Attempting to administer Openflow while `ACCOUNTADMIN` is the active role, which triggers policy errors.
+- Forgetting to grant runtime-level privileges; in Gen 2, `USAGE` on a deployment does not grant privileges on child runtimes.
+- Using `TERMINATE FORCE` instead of `TERMINATE`, which can drop uncommitted in-flight CDC messages from queues.
+- Neglecting to set `DEFAULT_SECONDARY_ROLES = ('ALL')` on administrative user accounts.
 
 ## Learn more
 
-- [About Openflow](https://docs.snowflake.com/en/user-guide/data-integration/openflow/about)
-- [Openflow gen 1 and gen 2](https://docs.snowflake.com/en/user-guide/data-integration/openflow/gen2/openflow-generations)
-- [Set up Openflow - BYOC](https://docs.snowflake.com/en/user-guide/data-integration/openflow/setup-openflow-byoc)
+- [Snowflake Openflow Overview](https://docs.snowflake.com/en/user-guide/data-integration/openflow/about)
+- [Openflow Gen 2 Architecture](https://docs.snowflake.com/en/user-guide/data-integration/openflow/gen2/openflow-generations)
+- [Data Connectivity Proxy Setup](https://docs.snowflake.com/en/user-guide/data-integration/openflow/setup-openflow-byoc)
 
 ## Knowledge check
 
-### A regulated customer must mask PII from an on-premises database before any data leaves their AWS network, and the database is reachable only from their VPC. Which Openflow deployment type fits?
-- [ ] Openflow - Snowflake Deployment on SPCS
-- [x] Bring Your Own Cloud (BYOC)
-- [ ] Either; deployment type does not affect where data is processed
-> In BYOC, the data plane runs inside the customer's own cloud environment, so preprocessing happens within their network boundary and private sources are reachable.
+### An enterprise must stream change data capture (CDC) from an on-premises Oracle database inside a private corporate data center into Snowflake without opening inbound firewall ports or configuring public IPs. Which solution fits best?
+- [ ] Direct Snowpipe over public internet endpoints
+- [x] Snowflake Openflow with the Data Connectivity Proxy deployed in the on-premises network
+- [ ] An external stage pointing to a public AWS S3 bucket
+- [ ] Scheduled Python UDFs executing continuous polling queries
+> The Data Connectivity Proxy establishes a secure, outbound-only TLS tunnel from the on-premises private network to Openflow, enabling continuous database CDC without opening inbound firewall rules.
 
-### A user with USAGE on a gen 2 Openflow deployment cannot see any of its runtimes. Why?
-- [ ] Gen 2 runtimes are only visible to ACCOUNTADMIN
-- [x] In gen 2, deployment USAGE does not grant runtime access; USAGE, OPERATE, or MONITOR must be granted on the runtime, plus USAGE on its database and schema
-- [ ] The user needs CREATE OPENFLOW DEPLOYMENT
-> Gen 2 runtimes are schema-scoped objects with their own privileges. Unlike gen 1, privileges on the deployment do not cascade to its runtimes.
+### How does Openflow Gen 2 improve pipeline governance and CI/CD compared to Gen 1?
+- [ ] Gen 2 eliminates the need for SPCS compute pools
+- [x] Deployments, runtimes, and connectors are first-class SQL objects with schema scoping and version-controlled declarative configurations
+- [ ] Gen 2 requires ACCOUNTADMIN to configure every connector
+- [ ] Gen 2 stores data strictly in temporary tables
+> Gen 2 represents runtimes and connectors as first-class, schema-scoped Snowflake objects that can be versioned, scripted in SQL, and promoted through CI/CD pipelines with granular RBAC.
 
-### What is the recommended way for Openflow runtimes to authenticate to Snowflake?
-- [ ] A shared password stored in the flow definition
-- [ ] Key-pair authentication for every connector
-- [x] Snowflake Managed Token, using SPCS session tokens or workload identity federation
-> Snowflake Managed Token is the default and recommended method across both deployment types. It avoids long-lived credentials; key-pair authentication remains an alternative for BYOC.
+### What is the recommended architectural pattern for landing Openflow CDC streams and keeping downstream analytical models fresh?
+- [ ] Write directly from Openflow into final reporting views using multi-statement transactions
+- [x] Stream raw CDC changes into an append-only landing table and use Dynamic Tables with target lag to maintain curated tables
+- [ ] Recreate the entire table hourly using CREATE TABLE AS SELECT
+- [ ] Trigger manual stored procedures on every individual record
+> Streaming CDC into a raw landing table and having Dynamic Tables incrementally merge changes with a target lag provides a resilient, automated medallion ELT pipeline with zero manual pipeline orchestration.

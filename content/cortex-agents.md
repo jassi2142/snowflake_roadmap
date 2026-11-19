@@ -4,7 +4,7 @@ Cortex Agents are schema-level Snowflake objects that orchestrate an LLM across 
 
 ## How it works
 
-An agent is created in Snowsight, through the REST API, or with `CREATE AGENT ... FROM SPECIFICATION`, using a YAML specification with these main sections:
+An agent can be designed interactively in **Snowsight Agent Studio** (under **AI > Agent Studio**), created via the REST API, or declared with `CREATE AGENT ... FROM SPECIFICATION`, using a YAML specification with these main sections:
 
 - **models**: the orchestration model, or `auto`.
 - **orchestration**: execution budget (`seconds`, `tokens`), `tool_not_accessible` behavior (whether a missing tool privilege aborts the run or lets it continue), and capabilities such as analytical search, which is off by default.

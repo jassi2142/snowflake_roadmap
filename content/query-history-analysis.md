@@ -20,6 +20,8 @@ Understand what attribution includes and excludes before you present numbers:
 
 The design decision is the ranking metric. Elapsed time optimizes user experience; attributed credits optimizes spend. A five-second dashboard query run 200,000 times a month often outranks a single two-hour batch job on both.
 
+In Snowsight under **Monitoring > Performance explorer**, Snowflake provides a built-in visual console that automatically aggregates query execution patterns using `query_parameterized_hash`. It flags slow query clusters, sudden execution time regressions, spilling trends, and warehouse queuing bottlenecks without requiring custom SQL scripts.
+
 ## Example
 
 Top recurring patterns by attributed credits over the last 30 days:
